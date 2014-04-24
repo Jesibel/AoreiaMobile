@@ -11,7 +11,7 @@
 		<!--script>document.location='http://test.aoreia.com';</script-->
 </head>
 <body>
-	<div data-role="page" style="background:#D1ECF4;" id="inicio" >
+<div data-role="page" style="background:#D1ECF4;" id="inicio" >
 	
       <div data-role="header" style="align:center">
         <a href="#" ><img src="resources/image/logo_aoreia.png"></a>
@@ -21,32 +21,84 @@
 	
 	  <div style="background:#EC6C00"><center>HOME</center></div>
 		
-	<div role="main" style="background:#D1ECF4;" class="ui-content"> 	
-	  <table>
-	  <tr>
-	  <td>
-	  <label for="text-basic">Username:</label>
-      <input type="text" name="text-basic" id="text-basic" value="">
-	  </td>
-	  </tr>
-	  
-	  <tr>
-	  <td>
-	  <label for="password">Password:</label>
-      <input type="password" name="password" id="password" value="" autocomplete="off">
-	  </td>
-	  </tr>
-	  </table>
-	</div>  
-	  
+		<!--div role="main" style="background:#D1ECF4;" class="ui-content"> 	
+		  <table>
+		  <tr>
+		  <td>
+		  <label for="text-basic">Username:</label>
+		  <input type="text" name="text-basic" id="text-basic" value="">
+		  </td>
+		  </tr>
+		  
+		  <tr>
+		  <td>
+		  <label for="password">Password:</label>
+		  <input type="password" name="password" id="password" value="" autocomplete="off">
+		  </td>
+		  </tr>
+		  </table>
+		</div-->  
 	
+	<div data-role="content">	
+		<form id="formulario" >
+      
+      			<label> E-mail Address: </label>
+      			<input type="text" id="emailaddress" name="emailaddress">
+      
+      			<label> Password </label>
+     			<input type="password" id="password" name="password" >
+ 
+      			<input type="submit" value="Login" id="botonLogin">
+      
+    		</form>		
+	</div>
+
+</div>
 	
-	
+	<div data-role="page" id="home">
+ 
+		<div data-role="header">
+			<h1>welcome</h1>
+		</div>
+	 
+		<div data-role="content">	
+			<h2> Welcome Aoreia Mobile </h2>
+			<h3> Your username and password are valid</h3>
+		</div>
+ 
 	</div>
 	
-	<div data-role="footer">
-       <h1>Footer Here</h1>
-    </div>
+	<script>
+ 
+$('#formulario').submit(function() { 
+	
+	 
+	// recolecta los valores que inserto el usuario
+	var datosUsuario = $("#emailaddress").val()
+	var datosPassword = $("#password").val()
+	
+  	archivoValidacion = "validation_data.php?jsoncallback=?"
+ 
+	$.getJSON( archivoValidacion, { usuario:datosUsuario ,password:datosPassword})
+	.done(function(respuestaServer) {
+		
+		alert(respuestaServer.mensaje + "\nGenerado en: " + respuestaServer.hora + "\n" +respuestaServer.generador)
+		
+		if(respuestaServer.validacion == "ok"){
+		  
+		 	/// si la validacion es correcta, muestra la pantalla "home"
+			$.mobile.changePage("#home")
+		  
+		}else{
+		  
+		  /// ejecutar una conducta cuando la validacion falla
+		}
+  
+	})
+	return false;
+})
+	
+</script>
 
 </body>
 </html>
