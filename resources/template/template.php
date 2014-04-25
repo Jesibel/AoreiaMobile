@@ -30,14 +30,14 @@ function verificarSession(){
 //incluida
 function AOREIAHead($validapage=true){
 	//verificarSession();
-	if($_GET['procode'])
+	/*if($_GET['procode'])
 		setcookie('procode',$_GET['procode'],0,'/');
 		
 	if($validapage==true && $_COOKIE['datos_usr']["idstatus"]==5)
 	{
 		echo "<script>document.location='homeunblocked.php';</script>";
 		return;
-	}
+	}*/
 	?>
         
     	<title>America's Online REIA for real estate investing </title>

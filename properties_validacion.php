@@ -16,21 +16,21 @@
 	}else{
 		$email=$_POST['loginEmail'];
 		$clave=$_POST['loginPass'];
-		$remember=$_POST['check']=="true" ? true:false;
+		//$remember=$_POST['check']=="true" ? true:false;
 
-		if($_POST['loginEmail2']<>'')
+		/*if($_POST['loginEmail2']<>'')
 		{
 			$email=$_POST['loginEmail2'];
 			$clave=$_POST['loginPass2'];
-		}
+		}*/
 		
 		$source='';
-		if($_GET['e']<>'')
+		/*if($_GET['e']<>'')
 		{
 			$email=base64_decode($_GET['e']);
 			$clave=base64_decode($_GET['p']);
 			$source=$_GET['s'];
-		}	
+		}*/	
 		
 		
 		$email=mysql_real_escape_string(strtolower($email));
@@ -61,24 +61,24 @@
 		mysql_free_result($rss);
 		
 		//almacenar datos de usuario en session global
-		if($remember){
+		/*if($remember){
 			$cod=md5($_SERVER['REMOTE_ADDR'].time());
 			setcookie('ximausa_login_remember',$cod,time()+(60*60*24*30),'/','aoreia.com');
 			mysql_query('insert into usr_access values ("'.$cod.'",'.$_datos_usr['USERID'].')');
 		}
 		else
 		{
-			if($_COOKIE['ximausa_login_remember'])
+			/*if($_COOKIE['ximausa_login_remember'])
 			{
 				setcookie('ximausa_login_remember',false,time()-3600,'/','aoreia.com');
 				unset($_COOKIE['ximausa_login_remember']);
-			}
+			}*/
 		}
 		// se verifica pregunta secreta
-		if($_datos_usr['questionuser']=='')
+		/*if($_datos_usr['questionuser']=='')
 		{
 			setcookie('datos_usr[requireQuestionuser]',true,0,'/','aoreia.com');
-		}
+		}*/
 		
 		/***************
 		*	producto asignado
@@ -86,18 +86,18 @@
 		
 				
 		//Generar la cookie del usuario
-		setcookie('datos_usr[NAME]',$_datos_usr['NAME'],0,'/','aoreia.com');
-		setcookie('datos_usr[SURNAME]',$_datos_usr['SURNAME'],0,'/','aoreia.com');
-		setcookie('datos_usr[USERID]',$_datos_usr['USERID'],0,'/','test.aoreia.com');
-		setcookie('datos_usr[idusertype]',$_datos_usr['idusertype'],0,'/','aoreia.com');
-		setcookie('datos_usr[idstatus]',$_datos_usr['idstatus'],0,'/','aoreia.com');
+		setcookie('datos_usr[NAME]',$_datos_usr['NAME'],0,'/','localhost');
+		setcookie('datos_usr[SURNAME]',$_datos_usr['SURNAME'],0,'/','localhost');
+		setcookie('datos_usr[USERID]',$_datos_usr['USERID'],0,'/','localhost');
+		setcookie('datos_usr[idusertype]',$_datos_usr['idusertype'],0,'/','localhost');
+		setcookie('datos_usr[idstatus]',$_datos_usr['idstatus'],0,'/','localhost');
 		setcookie('login',true,0,'/','aoreia.com');
 		//mysql_free_result($result);
 		
 				//Validación de Session
 				$_hora=time();	
-				setcookie('datos_usr[login_session]',$sess_id,0,'/','aoreia.com');
-				setcookie('datos_usr[login_dt]',$_hora,0,'/','aoreia.com');
+				setcookie('datos_usr[login_session]',$sess_id,0,'/','localhost');
+				setcookie('datos_usr[login_dt]',$_hora,0,'/','localhost');
 
 				
 				
@@ -115,22 +115,22 @@
 		while($data=mysql_fetch_assoc($res))
 		{
 			if(in_array($data['idstatus'] ,$statusActive)){
-				setcookie('addon['.$data['idproducto'].']',1,0,'/','aoreia.com');
+				setcookie('addon['.$data['idproducto'].']',1,0,'/','localhost');
 			}
 			else{
 				$active=false;
-				setcookie('addon['.$data['idproducto'].']',0,0,'/','aoreia.com');
+				setcookie('addon['.$data['idproducto'].']',0,0,'/','localhost');
 			}
 		}
 
-		if($_POST['easyReturn']){
-			echo json_encode(array('success' => true));
-		}
-		else{
-			if(isset($_POST['fromstore']) && $_POST['fromstore']== 'true')
-				echo "<script> document.location.href='store.php';</script>";
-			else 
-			{
+		//if($_POST['easyReturn']){
+		//	echo json_encode(array('success' => true));
+		//}
+		//else{
+			//if(isset($_POST['fromstore']) && $_POST['fromstore']== 'true')
+			//	echo "<script> document.location.href='store.php';</script>";
+			//else 
+			//{
 				if($source==9453)
 					echo "<script> document.location.href='my_classifieds.php';</script>";			
 				elseif($source==9455)
@@ -145,13 +145,13 @@
 										
 					//echo "<script> window.location.href='homeinside.php';</script>";			
 				}	
-			}
-		}
+			//}
+		//}
 		
-	}else{  
+	//}else{  
 		//si no existe el usuario/contraseña
 		unset($_COOKIE['datos_usr']);
-		if($_POST['returnForm'])
+		/*if($_POST['returnForm'])
 		{
 			echo "<a id='redirect' href='resources/php/errorlogin.php' target='_parent'></a>
 					<script> document.getElementById('redirect').click();</script>";
@@ -163,8 +163,8 @@
 		{
 			//include('errorlogin.php');
 			//echo "<script>document.location.href='login.php?e=1';</script>";
-		}
-	}
+		}*/
+	//}
 		
 	
 ?>

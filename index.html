@@ -14,38 +14,41 @@
 <body>
 <div data-role="page" id="inicio" style="background:#D1ECF4;" >
 	
-      <div data-role="header" style="height:150px;">
-	 
-        <img border="0" src="resources/image/logo_aoreia.png" alt="Logo" style="float:left;display:inline;">
-		<h1> American`s Online Real Estate </h1>
-		<h1>    Investors Association      </h1>
-		</img>
-      </div>
+      <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
+		
+		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
+		<img style="height:150px;width:230px;" src=" http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
+		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
+		<h1 style="color:#0057A6">    Investors Association      </h1>
+	</div>
 	
 	  <div style="background:#EC6C00"><center>HOME</center></div>
 	
 	
-	<div data-role="content" role="banner" class="ui-header ui-bar-inherit">	
-		<form id="formulario" >
-			<table >
-		      <tr>
-		        <td><label> E-mail Address: </label></td>
-      			<td><input type="text" id="emailaddress" name="emailaddress"></td>
-			   </tr>
-			  <tr>
-			    <td><label> Password: </label></td>
-     			<td><input type="password" id="password" name="password" ></td>
-			   </tr>
-			   <tr>
-			   <td>
-      			<input type="button" value="Login" id="sendButton" >	
-				</td>
-			   </tr>
-			  </table> 
+	<div data-role="content" >	
+		<form id="loginForm">
+			<table style="margin-left:540px;">
+				<tr>
+					<td><label> E-mail Address: </label></td>
+					<td><input type="text" id="loginEmail" name="loginEmail"></td>
+				</tr>
+				<tr>
+					<td><label> Password: </label></td>
+					<td><input type="password" id="loginPass" name="loginPass" ></td>			                  
+					<!--a class="textsize10 textbold" style="color:#333 !important;" href="forgotPassword.php">Forgot Password?</a-->
+				</tr>
+				<tr>
+					<td colspan="2"><input type="button" value="Login" id="sendButton" ></td>
+				</tr>
+				<tr>
+					<td colspan="2"><input id="forgotHtml" class="excecute" type="button" data-title="FORGOT YOUR PASSWORD" data-src=" http://test.aoreia.com/forgotPassword.php" data-excecute="forgotPassword" onclick="window.location.href='#forgotHtml'" value="Forgot your PassWord" data-theme="b"></td>
+				</tr>
+			</table>	
     	</form>	
-		<div class="ui-btn ui-input-btn ui-btn-b ui-corner-all ui-shadow">
-			<input id="forgotHtml" class="excecute" type="button" data-title="FORGOT YOUR PASSWORD" data-src="forgotPassword.php" data-excecute="forgotPassword" onclick="window.location.href='#forgotHtml'" value="Forgot your PassWord" data-theme="b">
-		</div>
+		
+		
+			
+		
 		
 	</div>
 	
@@ -57,21 +60,20 @@
 	
 <div data-role="page" id="home" style="background:#D1ECF4;">
 		
-		 <div data-role="header" style="align:center">
-	 
-        <img border="0" src="resources/image/logo96.png" alt="Logo" style="float:left;display:inline">
-		<h1> American`s Online Real Estate </h1>
-		<h1>    Investors Association      </h1>
-		</img>
-      </div>
+	<div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
+		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
+		<img style="height:150px;width:230px;" src=" http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
+		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
+		<h1 style="color:#0057A6">    Investors Association      </h1>
+	</div>
 	
-	  <div style="background:#EC6C00"><center>HOME</center></div>
+	<div style="background:#EC6C00"><center>HOME</center></div>
 	  
 			 
-		<div data-role="content">	
+	<div data-role="content">	
 		<!--h2> Welcome Aoreia Mobile </h2>
 		<h3> Your username and password are valid</h3-->
-		<iframe id="homeHtml" class="iframeRender" style="height: 759px; width:1500px;" src="homeinside.php">
+		<iframe id="homeHtml" class="iframeRender" style="height: 759px; width:1500px;" src=" http://test.aoreia.com/homeinside.php">
 			<html>
 				<head></head>
 				<body></body>
@@ -80,20 +82,20 @@
 	</div>
  
 </div>
-	
+
 <div id="forgotHtml" data-role="page" data-url="forgotHtml">
 	<a class="toMainMenu" style="display:none;" href="#principalMenu"></a>
 	
 	<div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
 		
 		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
-		<img style="height:50px;" src="resources/img/logo_aoreia.png"></h1>
+		<img style="height:150px;width:230px;" src="http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
 		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
 		<h1 style="color:#0057A6">    Investors Association      </h1>
 	</div>
 	
 	<div class="ui-content" style="padding: 0px;" role="main">
-		<iframe id="pageHtml" class="iframeRender" style="height: 759px; width:1500px;" src="forgotPassword.php">
+		<iframe id="pageHtml" class="iframeRender" style="height: 759px; width:1500px;" src="http://test.aoreia.com/forgotPassword.php">
 			<html>
 				<head></head>
 				<body></body>
@@ -102,44 +104,11 @@
 	</div>
 	
 </div>
-	
-<script>
- 
-$('#formulario').submit(function() { 
-	
-	 
-	// recolecta los valores que inserto el usuario
-	var datosUsuario = $("#emailaddress").val()
-	var datosPassword = $("#password").val()
-	
-  	archivoValidacion = "validation_data.php?jsoncallback=?"
-	//archivoValidacion = "http://revolucion.mobi/ejemplos/phonegap/envioFormulario/validacion_de_datos.php?jsoncallback=?"
- 
-	$.getJSON( archivoValidacion, { usuario:datosUsuario ,password:datosPassword})
-	.done(function(respuestaServer) {
-		
-		alert(respuestaServer.mensaje + "\nGenerado en: " + respuestaServer.hora + "\n" +respuestaServer.generador)
-		
-		if(respuestaServer.validacion == "ok"){
-		  
-		 	/// si la validacion es correcta, muestra la pantalla "home"
-			$.mobile.changePage("#home")
-		  
-		}else{
-		  
-		  /// ejecutar una conducta cuando la validacion falla
-		}
-  
-	})
-	return false;
-})
-	
-</script>
 
 <script type="text/javascript">
-$('#pageHtml').attr('src','forgotPassword.php');
+//$('#pageHtml').attr('src','http://test.aoreia.com/forgotPassword.php');
 
-$('#homeHtml').attr('src','homeinside.php');
+//$('#homeHtml').attr('src','http://test.aoreia.com/homeinside.php');
 </script>
 
 <script type="text/javascript">
@@ -172,7 +141,7 @@ $('#homeHtml').attr('src','homeinside.php');
 				$.ajax({
 					type: 'POST',
 				    dataType: "json",
-					url: 'resources/php/loginverify.php',
+					url: 'http://test.aoreia.com/resources/php/loginverify.php',
 					data: 'loginEmail=' + $('#loginEmail').val() + '&loginPass=' + $('#loginPass').val(),
 					success:function(msj){
 						//alert(msj.success+"|"+msj.error);							
@@ -182,7 +151,7 @@ $('#homeHtml').attr('src','homeinside.php');
 							$.ajax({
 								type: 'POST',
 								dataType: "json",
-								url: 'properties_validacion.php',
+								url: 'http://test.aoreia.com/properties_validacion.php',
 								data: 'loginEmail=' + $('#loginEmail').val() + '&loginPass=' + $('#loginPass').val(),
 								success:function(msj){
 									//alert(msj.success+"|"+msj.error);							
@@ -216,6 +185,39 @@ $('#homeHtml').attr('src','homeinside.php');
 		
        
     });
+	
+</script>
+	
+<script>
+ 
+$('#formulario').submit(function() { 
+	
+	 
+	// recolecta los valores que inserto el usuario
+	var datosUsuario = $("#emailaddress").val()
+	var datosPassword = $("#password").val()
+	
+  	archivoValidacion = "validation_data.php?jsoncallback=?"
+	//archivoValidacion = "http://revolucion.mobi/ejemplos/phonegap/envioFormulario/validacion_de_datos.php?jsoncallback=?"
+ 
+	$.getJSON( archivoValidacion, { usuario:datosUsuario ,password:datosPassword})
+	.done(function(respuestaServer) {
+		
+		alert(respuestaServer.mensaje + "\nGenerado en: " + respuestaServer.hora + "\n" +respuestaServer.generador)
+		
+		if(respuestaServer.validacion == "ok"){
+		  
+		 	/// si la validacion es correcta, muestra la pantalla "home"
+			$.mobile.changePage("#home")
+		  
+		}else{
+		  
+		  /// ejecutar una conducta cuando la validacion falla
+		}
+  
+	})
+	return false;
+})
 	
 </script>
 
