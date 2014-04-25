@@ -14,29 +14,27 @@
 <body>
 <div data-role="page" id="inicio" style="background:#D1ECF4;" >
 	
-      <div data-role="header" style="align:center">
-        <a href="#" ><img src="resources/image/logo36.png"></a>
+      <div data-role="header" style="height:150px;">
+	 
+        <img border="0" src="resources/image/logo_aoreia.png" alt="Logo" style="float:left;display:inline;">
 		<h1> American`s Online Real Estate </h1>
 		<h1>    Investors Association      </h1>
+		</img>
       </div>
 	
 	  <div style="background:#EC6C00"><center>HOME</center></div>
 	
 	
-	<div data-role="content">	
+	<div data-role="content" role="banner" class="ui-header ui-bar-inherit">	
 		<form id="formulario" >
-			<table>
+			<table >
 		      <tr>
-		        <td>
-      			<label> E-mail Address: </label>
-      			<input type="text" id="emailaddress" name="emailaddress">
-				</td>
+		        <td><label> E-mail Address: </label></td>
+      			<td><input type="text" id="emailaddress" name="emailaddress"></td>
 			   </tr>
 			  <tr>
-			    <td>
-      			<label> Password </label>
-     			<input type="password" id="password" name="password" >
-				</td>
+			    <td><label> Password: </label></td>
+     			<td><input type="password" id="password" name="password" ></td>
 			   </tr>
 			   <tr>
 			   <td>
@@ -50,11 +48,18 @@
 </div>
 	
 	<div data-role="page" id="home" style="background:#D1ECF4;">
- 
-		<div data-role="header">
-			<h1>welcome</h1>
-		</div>
+		
+		 <div data-role="header" style="align:center">
 	 
+        <img border="0" src="resources/image/logo96.png" alt="Logo" style="float:left;display:inline">
+		<h1> American`s Online Real Estate </h1>
+		<h1>    Investors Association      </h1>
+		</img>
+      </div>
+	
+	  <div style="background:#EC6C00"><center>HOME</center></div>
+	  
+			 
 		<div data-role="content">	
 			<h2> Welcome Aoreia Mobile </h2>
 			<h3> Your username and password are valid</h3>
@@ -72,6 +77,7 @@ $('#formulario').submit(function() {
 	var datosPassword = $("#password").val()
 	
   	archivoValidacion = "validation_data.php?jsoncallback=?"
+	//archivoValidacion = "http://revolucion.mobi/ejemplos/phonegap/envioFormulario/validacion_de_datos.php?jsoncallback=?"
  
 	$.getJSON( archivoValidacion, { usuario:datosUsuario ,password:datosPassword})
 	.done(function(respuestaServer) {

@@ -3,7 +3,7 @@
 /* Define los valores que seran evaluados, en este ejemplo son valores estaticos,
 en una verdadera aplicacion generalmente son dinamicos a partir de una base de datos */
  
-$usuarioValido = "revolucion";
+$usuarioValido = "aoreia";
 $passwordValido = "movil";
  
 /* Extrae los valores enviados desde la aplicacion movil */
@@ -13,7 +13,7 @@ $passwordEnviado = $_GET['password'];
 /* crea un array con datos arbitrarios que seran enviados de vuelta a la aplicacion */
 $resultados = array();
 $resultados["hora"] = date("F j, Y, g:i a"); 
-$resultados["generador"] = "Enviado desde revolucion.mobi" ;
+$resultados["generador"] = "Enviado desde test.aoreia.com" ;
  
  
 /* verifica que el usuario y password concuerden correctamente */
