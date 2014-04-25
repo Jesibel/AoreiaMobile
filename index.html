@@ -42,12 +42,20 @@
 				</td>
 			   </tr>
 			  </table> 
-    	</form>		
+    	</form>	
+		<div class="ui-btn ui-input-btn ui-btn-b ui-corner-all ui-shadow">
+			<input id="forgotHtml" class="excecute" type="button" data-title="FORGOT YOUR PASSWORD" data-src="forgotPassword.php" data-excecute="forgotPassword" onclick="window.location.href='#forgotHtml'" value="Forgot your PassWord" data-theme="b">
+		</div>
+		
+	</div>
+	
+	<div id="both" data-role="popup" data-transition="slideup" data-theme="a" class="ui-content">
+		<p></p>
 	</div>
 
 </div>
 	
-	<div data-role="page" id="home" style="background:#D1ECF4;">
+<div data-role="page" id="home" style="background:#D1ECF4;">
 		
 		 <div data-role="header" style="align:center">
 	 
@@ -61,13 +69,41 @@
 	  
 			 
 		<div data-role="content">	
-			<h2> Welcome Aoreia Mobile </h2>
-			<h3> Your username and password are valid</h3>
-		</div>
+		<!--h2> Welcome Aoreia Mobile </h2>
+		<h3> Your username and password are valid</h3-->
+		<iframe id="homeHtml" class="iframeRender" style="height: 759px; width:1500px;" src="homeinside.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
  
+</div>
+	
+<div id="forgotHtml" data-role="page" data-url="forgotHtml">
+	<a class="toMainMenu" style="display:none;" href="#principalMenu"></a>
+	
+	<div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
+		
+		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
+		<img style="height:50px;" src="resources/img/logo_aoreia.png"></h1>
+		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
+		<h1 style="color:#0057A6">    Investors Association      </h1>
 	</div>
 	
-	<script>
+	<div class="ui-content" style="padding: 0px;" role="main">
+		<iframe id="pageHtml" class="iframeRender" style="height: 759px; width:1500px;" src="forgotPassword.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
+	
+</div>
+	
+<script>
  
 $('#formulario').submit(function() { 
 	
@@ -97,6 +133,89 @@ $('#formulario').submit(function() {
 	})
 	return false;
 })
+	
+</script>
+
+<script type="text/javascript">
+$('#pageHtml').attr('src','forgotPassword.php');
+
+$('#homeHtml').attr('src','homeinside.php');
+</script>
+
+<script type="text/javascript">
+	//menuClick('menu-home');
+
+	$(document).ready(function () {
+		
+		
+    	$('#sendButton').bind('click', function (e) {
+		
+		var posY = e.clientY+e.currentTarget.clientHeight;	
+        		
+				if  ($('#loginEmail').val().length == ""){
+					   $("#both p")
+						.text("Empty Fields")
+						.parent().popup( "open", { y: posY } );
+					   return false;
+					   
+				}
+				
+				if  ($('#loginPass').val().length == ""){
+					   $("#both p")
+						.text("Empty Password")
+						.parent().popup( "open", { y: posY } );
+					   return false;
+					   
+				}
+					  
+									
+				$.ajax({
+					type: 'POST',
+				    dataType: "json",
+					url: 'resources/php/loginverify.php',
+					data: 'loginEmail=' + $('#loginEmail').val() + '&loginPass=' + $('#loginPass').val(),
+					success:function(msj){
+						//alert(msj.success+"|"+msj.error);							
+						if ( msj.success ){
+							
+							//otro ajax
+							$.ajax({
+								type: 'POST',
+								dataType: "json",
+								url: 'properties_validacion.php',
+								data: 'loginEmail=' + $('#loginEmail').val() + '&loginPass=' + $('#loginPass').val(),
+								success:function(msj){
+									//alert(msj.success+"|"+msj.error);							
+									if ( msj.success ){
+									
+									$.mobile.changePage("#home")
+									//alert('aqui');
+									
+									}
+									else{
+										
+									}
+								},
+								error:function(){
+									
+								}
+							});	
+						
+						
+						}
+						else{
+							
+						}
+					},
+					error:function(){
+						
+					}
+				});		
+							
+		});//$('#sendButton').bind('click', function ()
+		
+       
+    });
 	
 </script>
 
