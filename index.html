@@ -135,11 +135,11 @@
 				</tr>
 				<tr>
 					<td><label> E-mail Address: </label></td>
-					<td><input type="text" id="loginEmail" name="loginEmail"></td>
+					<td><input type="text" id="registerEmail" name="registerEmail"></td>
 				</tr>
 				<tr>
 					<td><label> Password: </label></td>
-					<td><input type="password" id="loginPass" name="loginPass" ></td>			                  
+					<td><input type="password" id="registerPass" name="registerPass" ></td>			                  
 					<!--a class="textsize10 textbold" style="color:#333 !important;" href="forgotPassword.php">Forgot Password?</a-->
 				</tr>
 				<tr>
@@ -223,6 +223,66 @@
 							});	
 						
 						
+						}
+						else{
+							
+						}
+					},
+					error:function(){
+						
+					}
+				});		
+							
+		});//$('#sendButton').bind('click', function ()
+		
+		$('#sendButton1').bind('click', function (e) {
+		
+		var posY = e.clientY+e.currentTarget.clientHeight;	
+        		
+				if  ($('#fullName').val().length == ""){
+					   $("#both p")
+						.text("Empty Fields")
+						.parent().popup( "open", { y: posY } );
+					   return false;
+					   
+				}
+				
+				if  ($('#userName').val().length == ""){
+					   $("#both p")
+						.text("Empty Fields")
+						.parent().popup( "open", { y: posY } );
+					   return false;
+					   
+				}
+				
+				if  ($('#registerEmail').val().length == ""){
+					   $("#both p")
+						.text("Empty Fields")
+						.parent().popup( "open", { y: posY } );
+					   return false;
+					   
+				}
+				
+				if  ($('#registerPass').val().length == ""){
+					   $("#both p")
+						.text("Empty Password")
+						.parent().popup( "open", { y: posY } );
+					   return false;
+					   
+				}
+					  
+									
+				$.ajax({
+					type: 'POST',
+				    dataType: "json",
+					url: 'http://test.aoreia.com/resources/php/loginverify.php',
+					data: 'loginEmail=' + $('#loginEmail').val() + '&loginPass=' + $('#loginPass').val(),
+					success:function(msj){
+						//alert(msj.success+"|"+msj.error);							
+						if ( msj.success ){
+							
+						$.mobile.changePage("#home")	
+												
 						}
 						else{
 							
