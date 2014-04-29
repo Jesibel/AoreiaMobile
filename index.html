@@ -14,20 +14,17 @@
 		<!--script>document.location='http://test.aoreia.com';</script-->
 </head>
 <body>
-<div data-role="page" id="inicio" style="background:#D1ECF4;" >
+<div data-role="page" id="inicio" style="background:#fff;" >
 	
-    <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
+    <div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#fff;">
 		
 		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
 		<img style="height:150px;width:230px;" src="http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
-		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
-		<h1 style="color:#0057A6">    Investors Association      </h1>
+		<h1  style="color:#0057A6;font-size:20px;"> American`s Online Real Estate </h1>
+		<h1  style="color:#0057A6;font-size:20px;">    Investors Association      </h1>
 	</div>
 	
-	 <div style="background:#EC6C00"><center>HOME</center></div>
-	
-	
-	<div data-role="content" >	
+	<div data-role="content" role="main" class="iu-content">	
 	 
 		<form id="loginForm">
 			<table style="margin: auto;">
@@ -61,16 +58,25 @@
 
 </div>
 	
-<div data-role="page" id="home" style="background:#D1ECF4;">
+<div data-role="page" id="home" style="background:#fff;">
 		
-	<div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
+	<!--div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#fff;">
 		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
 		<img style="height:150px;width:230px;" src=" http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
 		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
 		<h1 style="color:#0057A6">    Investors Association      </h1>
 	</div>
 	
-	<div style="background:#EC6C00"><center>HOME</center></div>
+	<div style="background:#EC6C00"><center>HOME</center></div-->
+	
+	<div data-role="header" style="background:#FA933F;">
+       <h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
+		<img style="height:50px;" src="http://test.aoreia.com/resources/img/aoreia2.png">
+		</h1>
+        <!--a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a-->
+		<a href="#nav-panel" data-icon="bars" data-iconpos="notext" data-theme="f" >Menu</a>
+        <a href="http://test.aoreia.com/indexMobile.html"  data-icon="delete" data-iconpos="notext" data-theme="f" >Logout</a>
+    </div><!-- /header -->
 	  
 			 
 	<div data-role="content">	
@@ -156,6 +162,25 @@
 	</div>	
 		
 </div>
+
+
+<div data-role="panel" data-display="push" data-theme="b" id="nav-panel">
+        <ul data-role="listview">
+            <li data-icon="delete"><a href="#home" data-rel="close">Close menu</a></li>
+                <li><a href="#panel-responsive-page2">My Account</a></li>
+                <li><a href="#panel-responsive-page2">Clasifieds</a></li>
+                <li><a href="#panel-responsive-page2">FAQ</a></li>
+                <li><a href="#panel-responsive-page2">NewsLetters</a></li>
+                <li><a href="#panel-responsive-page2">Articles</a></li>
+                <li><a href="#panel-responsive-page2">Audio</a></li>
+                <li><a href="#panel-responsive-page2">Video</a></li>
+                <li><a href="#panel-responsive-page2">Files</a></li>
+                <li><a href="#panel-responsive-page2">EBooks</a></li>
+                <li><a href="#panel-responsive-page2">Reports</a></li>
+                <li><a href="#panel-responsive-page2">Mettings</a></li>
+                
+        </ul>
+    </div><!-- /panel -->
 
 <script type="text/javascript">
 //$('#pageHtml').attr('src','http://test.aoreia.com/forgotPassword.php');
