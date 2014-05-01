@@ -66,7 +66,8 @@
 					<!--a class="textsize10 textbold" style="color:#333 !important;" href="forgotPassword.php">Forgot Password?</a-->
 				</tr>
 				<tr>
-					<td colspan="2"><input type="button" value="Login" id="sendButton" ></td>
+					<!--td colspan="6"><input style="width:150px;" type="button" value="Login" id="sendButton" /></td-->
+					<td><input id="sendButton" type="button" value="Login" name="sendButton" data-theme="a"></td>
 				</tr>
 				<tr>
 					<td colspan="2"><input id="forgotHtml" class="excecute" type="button" data-title="FORGOT YOUR PASSWORD" data-src=" http://test.aoreia.com/forgotPassword.php" data-excecute="forgotPassword" onclick="window.location.href='#forgotHtml'" value="Forgot your PassWord" data-theme="b"></td>
@@ -107,31 +108,6 @@
 		</div>
 		
     </div><!-- /header -->
-	  
-			 
-	<div data-role="content">	
-		<!--h2> Welcome Aoreia Mobile </h2>
-		<h3> Your username and password are valid</h3-->
-		<iframe id="homeHtml" class="iframeRender" style="height: 759px; width:1500px;" src=" http://test.aoreia.com/homeinside.php">
-			<html>
-				<head></head>
-				<body></body>
-			</html>
-		</iframe>
-	</div>
- 
-</div>
-
-<div id="forgotHtml" data-role="page" data-url="forgotHtml">
-	<a class="toMainMenu" style="display:none;" href="#principalMenu"></a>
-	
-	<div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
-		
-		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
-		<img style="height:150px;width:230px;" src="http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
-		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
-		<h1 style="color:#0057A6">    Investors Association      </h1>
-	</div>
 	
 	<div role="main" class="ui-content" style="padding:0;">
 		
@@ -301,7 +277,7 @@
 	</div>	
 		
 		
-		<div data-role="panel" id="nav-panel2" data-display="overlay" data-position="left">
+	<div data-role="panel" id="nav-panel2" data-display="overlay" data-position="left">
 			<ul data-role="listview" data-icon="false">
 			 <!--li data-icon="delete"-->
 			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
@@ -312,9 +288,37 @@
 			 <li><a href="#">FAQ</a></li>
 			 <li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li>
 			</ul>
-		</div><!-- /panel -->
+	</div><!-- /panel -->
 		
 	</div>
+			 
+	
+ 
+</div>
+
+<div id="forgotHtml" data-role="page" data-url="forgotHtml">
+	<a class="toMainMenu" style="display:none;" href="#principalMenu"></a>
+	
+	<div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
+		
+		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
+		<img style="height:150px;width:230px;" src="http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
+		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
+		<h1 style="color:#0057A6">    Investors Association      </h1>
+	</div>
+	
+	<div data-role="content">	
+		<!--h2> Welcome Aoreia Mobile </h2>
+		<h3> Your username and password are valid</h3-->
+		<iframe id="forgotHtml" class="iframeRender" style="height: 759px; width:1500px;" src=" http://test.aoreia.com/forgotPassword.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
+	
+	
 	
 </div>
 
