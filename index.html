@@ -6,12 +6,40 @@
 	<meta name="apple-mobile-web-app-capable" content="yes"/> 
     <title>AOREIA MOBILE</title>
     <meta charset="utf-8">
-    <link href="http://test.aoreia.com/resources/css/style.css" rel="stylesheet" type="text/css" />  
-	<title>Validacion de usuarios</title>
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+    <!--link href="http://test.aoreia.com/resources/css/style.css" rel="stylesheet" type="text/css" /> 
+	<!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 	<!--script>document.location='http://test.aoreia.com';</script-->
+	<link rel="stylesheet" href="http://test.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.css" type="text/css" media="screen">
+	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/demos/js/jquery.js"></script>
+	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.js"></script>	
+	<style>
+	 .tails{
+		padding:0;
+		min-height:68px;
+		background-color:#fff;
+		border-color:#fff;
+	 }
+	 
+	 .excecute{
+		margin:0px;
+	 }
+	 
+	 img{
+		max-width:100%;
+	 }
+	 
+	 .ui-body-noPadding{
+		padding:0;
+	 }
+	 
+	 .ui-icon-save{
+		background-image: url("resources/img/Save2.png")
+		;
+	 }
+	</style>
+	
 </head>
 <body>
 <div data-role="page" id="inicio" style="background:#fff;" >
@@ -60,22 +88,24 @@
 	
 <div data-role="page" id="home" style="background:#fff;">
 		
-	<!--div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#fff;">
-		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
-		<img style="height:150px;width:230px;" src=" http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
-		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
-		<h1 style="color:#0057A6">    Investors Association      </h1>
-	</div>
+		
+	<div data-role="header" style="background:#E98C40;">
 	
-	<div style="background:#EC6C00"><center>HOME</center></div-->
+       <div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;" class="ui-btn ui-icon-bars ui-btn-icon-notext excecute ui-first-child" data-excecute="main-Menu" data-theme="b" href="#nav-panel2">No text</a>
+			</div>
+		</div>
 	
-	<div data-role="header" style="background:#FA933F;">
-       <h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
-		<img style="height:50px;" src="http://test.aoreia.com/resources/img/aoreia2.png">
-		</h1>
-        <!--a href="#nav-panel" data-icon="bars" data-iconpos="notext">Menu</a-->
-		<a href="#nav-panel" data-icon="bars" data-iconpos="notext" data-theme="f" >Menu</a>
-        <a href="http://test.aoreia.com/indexMobile.html"  data-icon="delete" data-iconpos="notext" data-theme="f" >Logout</a>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6"> AOREIA.COM  </h3>
+	
+		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;" class="ui-btn ui-icon-search ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="#">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;" class="ui-btn ui-icon-power ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="index.html">No text</a>				
+			</div>
+		</div>
+		
     </div><!-- /header -->
 	  
 			 
@@ -103,13 +133,187 @@
 		<h1 style="color:#0057A6">    Investors Association      </h1>
 	</div>
 	
-	<div class="ui-content" style="padding: 0px;" role="main">
-		<iframe id="pageHtml" class="iframeRender" style="height: 759px; width:1500px;" src="http://test.aoreia.com/forgotPassword.php">
-			<html>
-				<head></head>
-				<body></body>
-			</html>
-		</iframe>
+	<div role="main" class="ui-content" style="padding:0;">
+		
+		<!--iframe id="homeHtml" class="iframeRender" style="height: 759px; width:1500px; border:1px solid white;" src="homeinside.php"></iframe-->
+	<div>	
+		<div class="ui-grid-a">
+		
+			<div class="ui-block-a">
+				<div class="ui-body ui-body-noPadding" style="padding:0">
+					<div class="ui-grid-a">
+
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-a tails">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" href="#settingHtml" data-transition="slide" data-title="AOREIA SETTINGS" data-src="http://test.aoreia.com/my_settings.php" data-excecute="settings" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-my_settings.png">
+								</a>
+							</div>
+						</div>
+						
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-a tails">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" href="#renderWeb" data-excecute="testFunction" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-weekly_insight.png">
+								</a>
+							</div>
+						</div>
+						
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-a tails">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" data-excecute="nothing" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-testimonials.png">
+								</a>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-a tails">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" data-excecute="nothing" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-Q&A.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="ui-block-b">
+				<div class="ui-body ui-body-noPadding" style="padding:0;">
+				
+					<div class="ui-grid-a">
+
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" href="#renderWeb" data-transition="slide" data-title="AOREIA" data-src="properties_search.php" data-excecute="professional" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-classifieds.png">
+								</a>
+							</div>
+						</div>
+						
+
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" href="#renderWeb" data-excecute="testFunction" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-store.png">
+								</a>
+							</div>
+						</div>
+						
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" data-excecute="nothing" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-audios.png">
+								</a>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" data-excecute="nothing" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-articles.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+						
+			<div class="ui-block-a">
+				<div class="ui-body ui-body-noPadding" style="padding:0">
+					<div class="ui-grid-a">
+
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" href="#settingWeb" data-transition="slide" data-title="REIFAX PROFESSIONAL" data-src="properties_search.php" data-excecute="professional" role="button">
+									<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-videos.png">
+								</a>
+							</div>
+						</div>
+						
+
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" href="#renderWeb" data-excecute="testFunction" role="button">
+									<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-files.png">
+								</a>
+							</div>
+						</div>
+						
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" target="_blank" href="http://www.facebook.com/pages/Americas-Online-REIA-LLC/122993624562827?skip_nax_wizard=true" data-excecute="nothing" role="button">
+									<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-facebook.png">							
+								</a>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" target="_blank" href="http://www.linkedin.com/pub/americas-online-reia-llc/6a/933/928" data-excecute="nothing" role="button">
+									<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-linkedin.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="ui-block-b">
+				<div class="ui-body ui-body-noPadding" style="padding:0;">
+				
+					<div class="ui-grid-a">
+
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" href="#contactUsHtml" data-transition="slide" data-title="AOREIA CONTACTS US" data-src="http://test.aoreia.com/contactus.php" data-excecute="professional" role="button">
+									<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-contact_us2.png">
+								</a>
+							</div>
+						</div>
+						
+
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" href="#aboutUsHtml" data-transition="slide" data-title="AOREIA ABOUT US" data-src="http://test.aoreia.com/aboutus.php" data-excecute="testFunction" role="button">
+									<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-about_us2.png">
+								</a>
+							</div>
+						</div>
+						
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" href="https://twitter.com/AOREIA" target="_blank" data-excecute="nothing" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-twitter.png">
+								</a>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
+								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all" data-excecute="nothing" role="button">
+								<img src="http://test.aoreia.com/resources/img/tiles/Real-Estate-Investing-glossary.png">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>	
+	</div>	
+		
+		
+		<div data-role="panel" id="nav-panel2" data-display="overlay" data-position="left">
+			<ul data-role="listview" data-icon="false">
+			 <!--li data-icon="delete"-->
+			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
+			 <!--/li-->
+			 <li data-role="list-divider">Share this page</li>
+			 <li><a class="excecute" data-excecute="searchByMap" href="javascript:void(0);">My Account</a></li>
+			 <li><a class="excecute" data-excecute="xrayReport"  href="javascript:void(0);">Clasifieds</a></li>
+			 <li><a href="#">FAQ</a></li>
+			 <li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li>
+			</ul>
+		</div><!-- /panel -->
+		
 	</div>
 	
 </div>
