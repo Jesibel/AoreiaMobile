@@ -22,6 +22,7 @@
  <!-- Preferences -->
 
  <preference name="orientation" value="landscape" />
+ <preference name="orientation" value="portrait" />
  <!--preference name="stay-in-webview" value="true" /--> 
  
  <!-- Define app icon for each platform. -->
