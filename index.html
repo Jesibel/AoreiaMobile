@@ -46,7 +46,7 @@
 	 }
 	 
 	
-	@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
 		#ui-content { float: none; width: 100%; }
 		#sidebar { float: none; width: 100%; padding: 20px; }
 		
@@ -168,7 +168,7 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;left:20%;" class="ui-btn ui-btn-icon-notext excecute ui-first-child" data-excecute="main-Menu" data-theme="b" href="#nav-panel2">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;left:20%;" class="ui-btn ui-btn-icon-notext excecute ui-first-child" data-excecute="menuVertical" data-theme="b" href="#nav-panel1">No text</a>
 			
 			</div>
 		</div>
@@ -182,7 +182,7 @@
 				<a id="showText" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
 				<div id='search' style='position:absolute; left: -190px; top: -1px; display:none;white-space: nowrap'>
-				<input type="text" id="searchHome" name="searchHome"></div>
+				<input type="text" id="search" name="search"></div>
 				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/quit-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="indexMobile.html">No text</a>				
 			</div>
 		</div>
@@ -440,7 +440,7 @@
 			</html>
 		</iframe-->
 		
-		<div data-role="panel" id="nav-panel2" data-display="overlay" data-position="left">
+		<div data-role="panel" id="nav-panel1" data-display="overlay" data-position="left">
 			<ul data-role="listview" data-icon="false">
 			 <!--li data-icon="delete"-->
 			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
@@ -1037,14 +1037,20 @@
 	   var search = $("input#searchWeekly").val();
 	   
        alert(search);
-	   //var scntDiv 		= $('#search');
-		//$("<form id='formname' name='formname' action='weekly.php' method='post'><input name='search' id='search' value='"+search+"' type='hidden'/></form>").appendTo(scntDiv);
-		//$('#formname').submit();
-		
-		//window.parent.document.getElementById("webWeeklyHtml").value=search;
-		window.parent.document.getElementById("webWeeklyHtml").contentWindow.searchresults();
-	   //window.parent.document.getElementById("#weeklyHtml");
-	   //window.location.reload(); 
+	   $.post('fetch_pages.php',{'search': search,page:0}, function(data) {
+			
+				
+				$("#webWeeklyHtml").contents().find("#results").empty();
+				$("#webWeeklyHtml").contents().find("#results").append(data);
+				
+				
+			
+			}).fail(function(xhr, ajaxOptions, thrownError) { 
+				alert(thrownError); //alert any HTTP error
+				$(".load_more").show(); //bring back load more button
+				$('.animation_image').hide(); //hide loading image once data is received
+			});
+	   
     }
 	});
 
