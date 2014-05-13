@@ -1036,7 +1036,7 @@
     if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
 	   var search = $("input#searchWeekly").val();
 	   
-       alert(search);
+       //alert(search);
 	   $.post('fetch_pages.php',{'search': search,page:0}, function(data) {
 			
 				
