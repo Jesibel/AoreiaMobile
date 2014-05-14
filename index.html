@@ -123,46 +123,6 @@
 <body>
 <div data-role="page" id="inicio" style="background:#fff;" >
 	
-    <!--div data-role="header" role="banner" class="ui-header ui-bar-inherit" style="background:#fff;">
-		
-		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
-		<img style="height:150px;width:230px;" src="http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
-		<h1  style="color:#0057A6;font-size:20px;"> American`s Online Real Estate </h1>
-		<h1  style="color:#0057A6;font-size:20px;">    Investors Association      </h1>
-	</div>
-	
-	<div data-role="content" role="main" class="iu-content">	
-	 
-		<form id="loginForm">
-			<table style="margin: auto;">
-				<tr>
-					<td><label> E-mail Address: </label></td>
-					<td><input type="text" id="loginEmail" name="loginEmail"></td>
-				</tr>
-				<tr>
-					<td><label> Password: </label></td>
-					<td><input type="password" id="loginPass" name="loginPass" ></td>			                  
-					<!--a class="textsize10 textbold" style="color:#333 !important;" href="forgotPassword.php">Forgot Password?</a-->
-				<!--/tr>
-				<tr>
-					<!--td colspan="6"><input style="width:150px;" type="button" value="Login" id="sendButton" /></td-->
-					<!--td colspan="2"><input id="sendButton" type="button" value="Login" name="sendButton" data-theme="a"></td>
-				</tr>
-				<tr>
-					<td colspan="2"><input id="forgotHtml" class="excecute" type="button" data-title="FORGOT YOUR PASSWORD" data-src=" http://test.aoreia.com/forgotPassword.php" data-excecute="forgotPassword" onclick="window.location.href='#forgotHtml'" value="Forgot your PassWord"></td>
-				</tr>				
-				<tr>
-					<td><a class="textsize10 textbold" style="color:#333 !important;" data-excecute="register" onclick="window.location.href='#registerHtml'" value="Register" data-theme="b">Register AOREIA</a></td>
-				</tr>
-				
-			</table>	
-    	</form>	
-	  	
-	</div>
-	
-	<div id="both" data-role="popup" data-transition="slideup" data-theme="a" class="ui-content">
-		<p></p>
-	</div-->
 	<div data-role="header" data-position="fixed" style="background:#E98C40;height:50px;">
 	
 	
@@ -413,11 +373,15 @@
 							</div>
 					</div>
 
-						<div class="ui-block-b grid">
+						<div class="ui-block-b grid grid2">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#glossaryHtml" data-transition="slide" data-title="AOREIA GLOSSARY" data-src="http://test.aoreia.com/glossary.php" data-excecute="glossary" role="button">
+								<a class="nada excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#glossaryHtml" data-transition="slide" data-title="AOREIA GLOSSARY" data-src="glossary.php" data-excecute="glossary" role="button">
 								<img class="nada" src="http://test.aoreia.com/resources/img/new/glossary.png">
-								<img class="face" src="http://test.aoreia.com/resources/img/new2/legal_mini.png">								
+								</a>
+								<a style="width:50%;left:-55px;" class="face excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#legalHtml" data-transition="slide" data-title="AOREIA LEGAL" data-src="legal.php" data-excecute="legal" role="button">
+								<img class="face" src="http://test.aoreia.com/resources/img/new2/legal_mini.png">	
+								</a>
+								<a style="width:50%;left:126px;top:-70px;" class="face excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#glossaryHtml" data-transition="slide" data-title="AOREIA GLOSSARY" data-src="glossary.php" data-excecute="glossary" role="button">
 								<img class="face" src="http://test.aoreia.com/resources/img/new2/glosary_mini.png">
 								</a>
 							</div>
@@ -470,272 +434,49 @@
 	</div>
 
 </div>
-	
-<div data-role="page" id="home" style="background:#fff;">
-		
-		
-	<div data-role="header" data-position="fixed" style="background:#E98C40;height:50px;">
+
+
+<div data-role="page" id="weeklyHtml" style="background:#fff;">
+
+	<div data-role="header" data-position="fixed" style="background:#E98C40;">
 	
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 20px 20px; margin-left:-11px;margin-top:3px;background-position:center center;left:20%;" class="ui-btn ui-btn-icon-notext excecute ui-first-child" data-excecute="main-Menu" data-theme="b" href="#nav-panel2">No text</a>
-			
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="weekly" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="weekly" data-theme="b" href="#nav-panel2">No text</a>
+				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:20px;"> AOREIA.COM  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Weekly Insight  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
-			<div class="ui-controlgroup-controls ">
-				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;" class="ui-btn ui-icon-search ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="#">No text</a-->
-				<a id="hideText" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 20px 20px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="showText" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 20px 20px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+			<div class="ui-controlgroup-controls ">				
+				<a id="hide1" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show1" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='search' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
+				<div id='searchWeekly' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input type="text" id="searchWeekly" name="searchWeekly"></div>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/quit-36.png');background-repeat:no-repeat; background-size: 20px 20px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="indexMobile.html">No text</a>				
+				
+				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
+				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
+					
 			</div>
 		</div>
 
-	
 	</div><!-- /header --> 
 	
-	<div role="main" class="ui-content" style="padding:0;">
-		
-		<!--iframe id="homeHtml" class="iframeRender" style="height: 759px; width:1500px; border:1px solid white;" src="homeinside.php"></iframe-->
-	<div>	
-		<div class="ui-grid-a">
-		
-			<div class="ui-block-a">
-				<div class="ui-body ui-body-noPadding" style="padding:0">
-					<div class="ui-grid-a">
-
-						<div class="ui-block-a grid">
-							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#settingHtml" data-transition="slide" data-title="AOREIA SETTINGS" data-src="http://test.aoreia.com/my_settings.php" data-excecute="settings" role="button">
-								<img src="http://test.aoreia.com/resources/img/new/my_settings2.png">
-								</a>
-							</div>
-						</div>
-						
-						<div class="ui-block-b grid">
-							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#weeklyHtml" data-transition="slide" data-title="AOREIA WEEKLY" data-src="http://test.aoreia.com/weekly_insight.php?p=1" data-excecute="weekly" role="button">
-								<img src="http://test.aoreia.com/resources/img/new/weeklyinsight2.png">
-								</a>
-							</div>
-						</div>
-						
-						<div class="ui-block-a grid">
-							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#testimonialsHtml" data-transition="slide" data-title="AOREIA TESTIMONIALS" data-src="http://test.aoreia.com/testimonials.php" data-excecute="testimonials" role="button">
-								<img src="http://test.aoreia.com/resources/img/new/testimonials2.png">
-								</a>
-							</div>
-						</div>
-						<div class="ui-block-b grid">
-							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#faqHtml" data-transition="slide" data-title="AOREIA FAQ" data-src="http://test.aoreia.com/faq.php" data-excecute="faq" role="button">
-								<img src="http://test.aoreia.com/resources/img/new/faq2.png">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="ui-block-b">
-				<div class="ui-body ui-body-noPadding" style="padding:0;">
-				
-					<div class="ui-grid-a">
-
-						<div class="ui-block-a grid">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#classifiedsHtml" data-transition="slide" data-title="AOREIA CLASSIFIEDS" data-src="http://test.aoreia.com/classifieds.php" data-excecute="classifieds" role="button">
-								<img src="http://test.aoreia.com/resources/img/new/classifieds2.png">
-								</a>
-							</div>
-						</div>
-						
-
-						<div class="ui-block-b grid">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#renderWeb" data-excecute="testFunction" role="button">
-								<img src="http://test.aoreia.com/resources/img/new/store2.png">
-								</a>
-							</div>
-						</div>
-						
-						<div class="ui-block-a grid">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#audiosHtml" data-transition="slide" data-title="AOREIA AUDIOS BOOKS" data-src="http://test.aoreia.com/audios.php" data-excecute="audiosbooks" role="button">
-								<img src="http://test.aoreia.com/resources/img/new/audio_books2.png">
-								</a>
-							</div>
-						</div>
-						<div class="ui-block-b grid">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#articlesHtml" data-transition="slide" data-title="AOREIA ARTICLES" data-src="http://test.aoreia.com/articles.php" data-excecute="articles" role="button">
-								<img src="http://test.aoreia.com/resources/img/new/article2.png">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-						
-			<div class="ui-block-a">
-				<div class="ui-body ui-body-noPadding" style="padding:0">
-					<div class="ui-grid-a">
-
-						<div class="ui-block-a grid">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#videosWeb" data-transition="slide" data-title="AOREIA VIDEOS" data-src="http://test.aoreia.com/videos.php" data-excecute="videos" role="button">
-									<img src="http://test.aoreia.com/resources/img/new/videos2.png">
-								</a>
-							</div>
-						</div>
-						
-
-						<div class="ui-block-b grid">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#filesWeb" data-transition="slide" data-title="AOREIA FILES" data-src="http://test.aoreia.com/aofiles.php" data-excecute="files" role="button">
-									<img src="http://test.aoreia.com/resources/img/new/files2.png">
-								</a>
-							</div>
-						</div>
-						
-						<div class="ui-block-a grid">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#recentHtml" data-transition="slide" data-title="AOREIA RECENT DEALS" data-src="http://test.aoreia.com/recentdeals.php" data-excecute="recent_deals" role="button">
-									<img src="http://test.aoreia.com/resources/img/new/recent_deal2.png">							
-								</a>
-							</div>
-						</div>
-						<div class="ui-block-b grid nada">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#legalHtml" data-transition="slide" data-title="AOREIA LEGAL" data-src="http://test.aoreia.com/legal.php" data-excecute="legal" role="button">
-									<img src="http://test.aoreia.com/resources/img/new/legal2.png">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			
-			<div class="ui-block-b">
-				<div class="ui-body ui-body-noPadding" style="padding:0;">
-				
-					<div class="ui-grid-a">
-
-						<div class="ui-block-a grid">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#meetingsHtml" data-transition="slide" data-title="AOREIA MEETINGS ARCHIVE" data-src="http://test.aoreia.com/meeting.php" data-excecute="meetings" role="button">
-									<img src="http://test.aoreia.com/resources/img/new/meeting_archives2.png">
-								</a>
-							</div>
-						</div>
-						
-
-						<div class="ui-block-b grid">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#myclassifiedsHtml" data-transition="slide" data-title="AOREIA MY CLASSIFIEDS" data-src="http://test.aoreia.com/my_classifieds.php" data-excecute="myclassifieds" role="button">
-									<img src="http://test.aoreia.com/resources/img/new/my_classifieds2.png">
-								</a>
-							</div>
-						</div>
-						
-						<div class="ui-block-a grid">
-							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#contactUsHtml" data-transition="slide" data-title="AOREIA CONTACTS US" data-src="http://test.aoreia.com/contactus.php" data-excecute="professional" role="button">
-									<img class="nada" src="http://test.aoreia.com/resources/img/new/contactus2.png">
-									<img src="http://test.aoreia.com/resources/img/new/contact_us_mini2.png">
-									<img src="http://test.aoreia.com/resources/img/new/about_us_mini2.png">
-								</a>
-							</div>
-						</div>
-						
-
-						<div class="ui-block-b grid nada">
-							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#aboutUsHtml" data-transition="slide" data-title="AOREIA ABOUT US" data-src="http://test.aoreia.com/aboutus.php" data-excecute="testFunction" role="button">
-									<img src="http://test.aoreia.com/resources/img/new/aboutus2.png">
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="ui-block-a">
-				<div class="ui-body ui-body-noPadding" style="padding:0">
-					<div class="ui-grid-a">
-
-						<div class="ui-block-a grid">
-							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" target="_blank" href="http://www.facebook.com/pages/Americas-Online-REIA-LLC/122993624562827?skip_nax_wizard=true" data-excecute="nothing" role="button">
-									<img class="nada" src="http://test.aoreia.com/resources/img/new/facebook2.png">	
-									<img class="face" src="http://test.aoreia.com/resources/img/new/facebook_mini2.png">
-									<img class="face" src="http://test.aoreia.com/resources/img/new/twitter_mini2.png">
-									<img class="face" src="http://test.aoreia.com/resources/img/new/linkedin_mini2.png">									
-								</a>
-							</div>
-						</div>
-						<div class="ui-block-b grid nada">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" target="_blank" href="http://www.linkedin.com/pub/americas-online-reia-llc/6a/933/928" data-excecute="nothing" role="button">
-									<img src="http://test.aoreia.com/resources/img/new/linkedin2.png">
-								</a>
-							</div>
-						</div>
-						
-						
-					</div>
-				</div>
-			</div>
-			
-			
-			<div class="ui-block-b">
-				<div class="ui-body ui-body-noPadding" style="padding:0;">
-				
-					<div class="ui-grid-a">
-
-						<div class="ui-block-a grid nada">
-							<div class="ui-bar ui-bar-a tails" >
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="https://twitter.com/AOREIA" target="_blank" data-excecute="nothing" role="button">
-								<img src="http://test.aoreia.com/resources/img/new/twitter2.png">
-								</a>
-							</div>
-						</div>
-						<div class="ui-block-b grid">
-							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn ui-shadow ui-corner-all btn" href="#glossaryHtml" data-transition="slide" data-title="AOREIA GLOSSARY" data-src="http://test.aoreia.com/glossary.php" data-excecute="glossary" role="button">
-								<img class="nada" src="http://test.aoreia.com/resources/img/new/glossary2.png">
-								<img class="face" src="http://test.aoreia.com/resources/img/new/legal_mini2.png">
-								<img class="face" src="http://test.aoreia.com/resources/img/new/glosary_mini2.png">
-								</a>
-							</div>
-						</div>
-						
-						
-					</div>
-				</div>
-			</div>										
-			
-			
-		</div>	
+	<div data-role="content">	
+			<iframe id="webWeeklyHtml" class="iframeRender" style="margin-left:-10px;height: 759px; width:106%; border:1px solid white;margin-top:-20px;" src="http://test.aoreia.com/weekly.php?p=1">
+				<html>
+					<head></head>
+					<body></body>
+				</html>
+			</iframe>
 	</div>	
-		
-		<!--iframe id="home" class="iframeRender ui-body ui-body-noPadding tails" style="height: 250px; width:1500px;border:1px solid white;padding:0;" src="http://test.aoreia.com/homeinside.php">
-			<html>
-				<head></head>
-				<body></body>
-			</html>
-		</iframe-->
-		
-		<div data-role="panel" id="nav-panel2" data-display="overlay" data-position="left">
+	
+	<div data-role="panel" id="nav-panel2" data-display="overlay" data-position="left">
 			<ul data-role="listview" data-icon="false">
 			 <!--li data-icon="delete"-->
 			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
@@ -743,14 +484,14 @@
 			 <!--li data-role="list-divider">Share this page</li-->
 			 <li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li>
 			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
-			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Clasifieds</a></li>
+			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Classifieds</a></li>
 			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
 			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
 			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
 			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
 			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
 			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
-			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Clasifieds</a></li>
+			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Classifieds</a></li>
 			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
 			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
 			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
@@ -760,29 +501,49 @@
 			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
 			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
 			</ul>
-		</div><!-- /panel -->
-		
-	</div>
-			 
+	</div><!-- /panel -->
+	
+	<!--div data-role="collapsible">
+	<h4></h4>
+	<p>I'm the collapsible content. By default I'm closed, but you can click the header to open me.</p>
+	</div-->
 	
  
 </div>
 
-<div id="forgotHtml" data-role="page" data-url="forgotHtml">
-	<a class="toMainMenu" style="display:none;" href="#principalMenu"></a>
+<div data-role="page" id="testimonialsHtml" style="background:#fff;">
+
+	<div data-role="header" data-position="fixed" style="background:#E98C40;">
 	
-	<div data-role="header" data-position="fixed" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
-		
-		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
-		<img style="height:150px;width:230px;" src="http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
-		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
-		<h1 style="color:#0057A6">    Investors Association      </h1>
-	</div>
 	
+		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="testimonials" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="testimonials" data-theme="b" href="#nav-panel3">No text</a>
+				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
+			</div>
+		</div>
+	
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Testimonials  </h3>
+	
+		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">				
+				<a id="hide2" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show2" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				
+				<div id='searchTest' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
+				<input type="text" id="searchTest" name="searchTest"></div>
+				
+				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
+				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
+					
+			</div>
+		</div>
+
+	</div><!-- /header --> 
+			 
 	<div data-role="content">	
-		<!--h2> Welcome Aoreia Mobile </h2>
-		<h3> Your username and password are valid</h3-->
-		<iframe id="forgotHtml" class="iframeRender" style="height: 759px; width:1500px;" src=" http://test.aoreia.com/forgotPassword.php">
+		<iframe id="webTestimonialsHtml" class="iframeRender" style="margin-left:-10px;margin-top:-10px;height: 759px; width:106%; border:1px solid white;" src="http://test.aoreia.com/testimoni.php">
 			<html>
 				<head></head>
 				<body></body>
@@ -790,58 +551,519 @@
 		</iframe>
 	</div>
 	
-	
-	
+	<div data-role="panel" id="nav-panel3" data-display="overlay" data-position="left">
+			<ul data-role="listview" data-icon="false">
+			 <!--li data-icon="delete"-->
+			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
+			 <!--/li-->
+			 <!--li data-role="list-divider">Share this page</li-->
+			 <li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li>
+			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
+			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
+			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
+			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
+			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
+			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
+			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
+			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
+			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
+			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
+			 <li><a class="excecute" data-excecute="legal"  href="#legalHtml">Legal</a></li>
+			 <li><a class="excecute" data-excecute="contactus" href="#contactUsHtml">Contacts Us</a></li>
+			 <li><a class="excecute" data-excecute="aboutus" href="#AboutUsHtml">About Us</a></li>
+			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
+			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
+			</ul>
+	</div><!-- /panel -->
+ 
 </div>
 
 
-<div id="registerHtml" data-role="page" data-url="registerHtml" style="background:#D1ECF4;">
-	<a class="toMainMenu" style="display:none;" href="#principalMenu"></a>
+<div data-role="page" id="faqHtml" style="background:#fff;">
+
+	<div data-role="header" data-position="fixed" style="background:#E98C40;">
 	
-	<div data-role="header"  data-position="fixed" role="banner" class="ui-header ui-bar-inherit" style="background:#D1ECF4;">
-		
-		<h1 class="ui-title" style="padding:0px;" role="heading" aria-level="1">
-		<img style="height:150px;width:230px;" src="http://test.aoreia.com/resources/img/logo_aoreia.png"></h1>
-		<h1 style="color:#0057A6"> American`s Online Real Estate </h1>
-		<h1 style="color:#0057A6">    Investors Association      </h1>
-	</div>
 	
-	<div style="background:#EC6C00"><center>HOME</center></div>
+		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="faq" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="faq" data-theme="b" href="#nav-panel4">No text</a>
+				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
+			</div>
+		</div>
 	
-	<div data-role="iu-content" >	
-		<form id="registerForm">
-			<table style="margin: auto;">
-				<tr>
-					<td><label> Fullname: </label></td>
-					<td><input type="text" id="fullName" name="fullName"></td>
-				</tr>
-				<tr>
-					<td><label> Username: </label></td>
-					<td><input type="text" id="userName" name="userName"></td>
-				</tr>
-				<tr>
-					<td><label> E-mail Address: </label></td>
-					<td><input type="text" id="registerEmail" name="registerEmail"></td>
-				</tr>
-				<tr>
-					<td><label> Password: </label></td>
-					<td><input type="password" id="registerPass" name="registerPass" ></td>			                  
-					<!--a class="textsize10 textbold" style="color:#333 !important;" href="forgotPassword.php">Forgot Password?</a-->
-				</tr>
-				<tr>
-					<td colspan="2"><input style="width:150px;" type="button" value="Register" id="sendButton1" ></td>
-				</tr>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> FAQ </h3>
+	
+		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">				
+				<a id="hide3" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show3" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-			</table>	
-    	</form>	
-		
-		<div id="both" data-role="popup" data-transition="slideup" data-theme="a" class="ui-content">
-			<p></p>
+				<div id='searchFaq' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
+				<input type="text" id="searchFaq" name="searchFaq"></div>
+				
+				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
+				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
+					
+			</div>
 		</div>
 
-	</div>	
-		
+	</div><!-- /header --> 
+			 
+	<div data-role="content">	
+		<iframe id="webFaqHtml" class="iframeRender" style="margin-left:-10px;margin-top:-10px;height: 759px; width:106%; border:1px solid white;" src="http://test.aoreia.com/faqs.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
+	
+	<div data-role="panel" id="nav-panel4" data-display="overlay" data-position="left">
+			<ul data-role="listview" data-icon="false">
+			 <!--li data-icon="delete"-->
+			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
+			 <!--/li-->
+			 <!--li data-role="list-divider">Share this page</li-->
+			 <li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li>
+			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
+			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
+			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
+			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
+			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
+			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
+			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
+			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
+			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
+			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
+			 <li><a class="excecute" data-excecute="legal"  href="#legalHtml">Legal</a></li>
+			 <li><a class="excecute" data-excecute="contactus" href="#contactUsHtml">Contacts Us</a></li>
+			 <li><a class="excecute" data-excecute="aboutus" href="#AboutUsHtml">About Us</a></li>
+			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
+			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
+			</ul>
+	</div><!-- /panel -->
+ 
 </div>
+
+<div data-role="page" id="articlesHtml" style="background:#fff;">
+
+	<div data-role="header" data-position="fixed" style="background:#E98C40;">
+	
+	
+		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="#nav-panel5">No text</a>
+				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
+			</div>
+		</div>
+	
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Articles </h3>
+	
+		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">				
+				<a id="hide4" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show4" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				
+				<div id='searchArt' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
+				<input type="text" id="searchArt" name="searchArt"></div>
+				
+				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
+				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
+					
+			</div>
+		</div>
+
+	</div><!-- /header --> 
+			 
+	<div data-role="content">	
+		<iframe id="webArticlesHtml" class="iframeRender" style="margin-left:-10px;margin-top:-10px;height: 759px; width:106%; border:1px solid white;" src="http://test.aoreia.com/articless.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
+	
+	<div data-role="panel" id="nav-panel5" data-display="overlay" data-position="left">
+			<ul data-role="listview" data-icon="false">
+			 <!--li data-icon="delete"-->
+			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
+			 <!--/li-->
+			 <!--li data-role="list-divider">Share this page</li-->
+			 <li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li>
+			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
+			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
+			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
+			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
+			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
+			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
+			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
+			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
+			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
+			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
+			 <li><a class="excecute" data-excecute="legal"  href="#legalHtml">Legal</a></li>
+			 <li><a class="excecute" data-excecute="contactus" href="#contactUsHtml">Contacts Us</a></li>
+			 <li><a class="excecute" data-excecute="aboutus" href="#AboutUsHtml">About Us</a></li>
+			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
+			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
+			</ul>
+	</div><!-- /panel -->
+ 
+</div>
+
+<div data-role="page" id="audiosHtml" style="background:#fff;">
+
+	<div data-role="header" data-position="fixed" style="background:#E98C40;">
+	
+	
+		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="#nav-panel6">No text</a>
+				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
+			</div>
+		</div>
+	
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Audios Books </h3>
+	
+		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">				
+				<a id="hide5" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show5" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				
+				<div id='searchAudios' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
+				<input type="text" id="searchAudios" name="searchAudios"></div>
+				
+				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
+				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
+					
+			</div>
+		</div>
+
+	</div><!-- /header --> 
+			 
+	<div data-role="content">	
+		<iframe id="webAudiosHtml" class="iframeRender" style="margin-left:-10px;margin-top:-10px;height: 759px; width:106%; border:1px solid white;" src="http://test.aoreia.com/audioss.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
+	
+	<div data-role="panel" id="nav-panel6" data-display="overlay" data-position="left">
+			<ul data-role="listview" data-icon="false">
+			 <!--li data-icon="delete"-->
+			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
+			 <!--/li-->
+			 <!--li data-role="list-divider">Share this page</li-->
+			 <li><a class="excecute" data-excecute="settings" href="#settingHtml"><img >My Settings</a></li>
+			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
+			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
+			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
+			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
+			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
+			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
+			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
+			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
+			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
+			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
+			 <li><a class="excecute" data-excecute="legal"  href="#legalHtml">Legal</a></li>
+			 <li><a class="excecute" data-excecute="contactus" href="#contactUsHtml">Contacts Us</a></li>
+			 <li><a class="excecute" data-excecute="aboutus" href="#AboutUsHtml">About Us</a></li>
+			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
+			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
+			</ul>
+	</div><!-- /panel -->
+ 
+</div>
+
+<div data-role="page" id="videosHtml" style="background:#fff;">
+
+	<div data-role="header" data-position="fixed" style="background:#E98C40;">
+	
+	
+		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="videos" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="videos" data-theme="b" href="#nav-panel7">No text</a>
+				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
+			</div>
+		</div>
+	
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Videos </h3>
+	
+		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">				
+				<a id="hide6" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show6" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				
+				<div id='searchVideos' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
+				<input type="text" id="searchVideos" name="searchVideos"></div>
+				
+				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
+				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
+					
+			</div>
+		</div>
+
+	</div><!-- /header --> 
+			 
+	<div data-role="content">	
+		<iframe id="webVideosHtml" class="iframeRender" style="margin-left:-10px;margin-top:-10px;height: 759px; width:106%; border:1px solid white;" src="http://test.aoreia.com/videoss.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
+	
+	<div data-role="panel" id="nav-panel7" data-display="overlay" data-position="left">
+			<ul data-role="listview" data-icon="false">
+			 <!--li data-icon="delete"-->
+			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
+			 <!--/li-->
+			 <!--li data-role="list-divider">Share this page</li-->
+			 <li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li>
+			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
+			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
+			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
+			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
+			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
+			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
+			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
+			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
+			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
+			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
+			 <li><a class="excecute" data-excecute="legal"  href="#legalHtml">Legal</a></li>
+			 <li><a class="excecute" data-excecute="contactus" href="#contactUsHtml">Contacts Us</a></li>
+			 <li><a class="excecute" data-excecute="aboutus" href="#AboutUsHtml">About Us</a></li>
+			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
+			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
+			</ul>
+	</div><!-- /panel -->
+ 
+</div>
+
+<div data-role="page" id="filesHtml" style="background:#fff;">
+
+	<div data-role="header" data-position="fixed" style="background:#E98C40;">
+	
+	
+		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="files" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="files" data-theme="b" href="#nav-panel8">No text</a>
+				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
+			</div>
+		</div>
+	
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Files </h3>
+	
+		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">				
+				<a id="hide7" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show7" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				
+				<div id='searchFiles' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
+				<input type="text" id="searchFiles" name="searchFiles"></div>
+				
+				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
+				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
+					
+			</div>
+		</div>
+
+	</div><!-- /header --> 
+			 
+	<div data-role="content">	
+		<iframe id="webFilesHtml" class="iframeRender" style="margin-left:-10px;margin-top:-10px;height: 759px; width:106%; border:1px solid white;" src="http://test.aoreia.com/filess.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
+	
+	<div data-role="panel" id="nav-panel7" data-display="overlay" data-position="left">
+			<ul data-role="listview" data-icon="false">
+			 <!--li data-icon="delete"-->
+			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
+			 <!--/li-->
+			 <!--li data-role="list-divider">Share this page</li-->
+			 <li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li>
+			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
+			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
+			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
+			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
+			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
+			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
+			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
+			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
+			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
+			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
+			 <li><a class="excecute" data-excecute="legal"  href="#legalHtml">Legal</a></li>
+			 <li><a class="excecute" data-excecute="contactus" href="#contactUsHtml">Contacts Us</a></li>
+			 <li><a class="excecute" data-excecute="aboutus" href="#AboutUsHtml">About Us</a></li>
+			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
+			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
+			</ul>
+	</div><!-- /panel -->
+ 
+</div>
+
+<div data-role="page" id="recentHtml" style="background:#fff;">
+
+	<div data-role="header" data-position="fixed" style="background:#E98C40;">
+	
+	
+		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="recent" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="recent" data-theme="b" href="#nav-panel9">No text</a>
+				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
+			</div>
+		</div>
+	
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Recent Deals </h3>
+	
+		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">				
+				<a id="hide8" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show8" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				
+				<div id='searchRec' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
+				<input type="text" id="searchRec" name="searchRec"></div>
+				
+				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
+				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
+					
+			</div>
+		</div>
+
+	</div><!-- /header --> 
+			 
+	<div data-role="content">	
+		<iframe id="webRecentHtml" class="iframeRender" style="margin-left:-10px;margin-top:-10px;height: 759px; width:106%; border:1px solid white;" src="http://test.aoreia.com/recent.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
+	
+	<div data-role="panel" id="nav-panel9" data-display="overlay" data-position="left">
+			<ul data-role="listview" data-icon="false">
+			 <!--li data-icon="delete"-->
+			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
+			 <!--/li-->
+			 <!--li data-role="list-divider">Share this page</li-->
+			 <li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li>
+			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
+			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
+			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
+			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
+			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
+			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
+			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
+			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
+			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
+			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
+			 <li><a class="excecute" data-excecute="legal"  href="#legalHtml">Legal</a></li>
+			 <li><a class="excecute" data-excecute="contactus" href="#contactUsHtml">Contacts Us</a></li>
+			 <li><a class="excecute" data-excecute="aboutus" href="#AboutUsHtml">About Us</a></li>
+			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
+			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
+			</ul>
+	</div><!-- /panel -->
+ 
+</div>
+
+<div data-role="page" id="meetingsHtml" style="background:#fff;">
+
+	<div data-role="header" data-position="fixed" style="background:#E98C40;">
+	
+	
+		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="meetings" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="meetings" data-theme="b" href="#nav-panel10">No text</a>
+				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
+			</div>
+		</div>
+	
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Meetings Archives </h3>
+	
+		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
+			<div class="ui-controlgroup-controls ">				
+				<a id="hide9" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show9" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				
+				<div id='searchMeet' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
+				<input type="text" id="searchMeet" name="searchMeet"></div>
+				
+				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
+				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
+					
+			</div>
+		</div>
+
+	</div><!-- /header --> 
+			 
+	<div data-role="content">	
+		<iframe id="webMeetingsHtml" class="iframeRender" style="margin-left:-10px;margin-top:-10px;height: 759px; width:106%; border:1px solid white;" src="http://test.aoreia.com/meetings.php">
+			<html>
+				<head></head>
+				<body></body>
+			</html>
+		</iframe>
+	</div>
+	
+	<div data-role="panel" id="nav-panel10" data-display="overlay" data-position="left">
+			<ul data-role="listview" data-icon="false">
+			 <!--li data-icon="delete"-->
+			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
+			 <!--/li-->
+			 <!--li data-role="list-divider">Share this page</li-->
+			 <li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li>
+			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
+			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
+			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
+			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
+			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
+			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
+			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
+			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Classifieds</a></li>
+			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
+			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
+			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
+			 <li><a class="excecute" data-excecute="legal"  href="#legalHtml">Legal</a></li>
+			 <li><a class="excecute" data-excecute="contactus" href="#contactUsHtml">Contacts Us</a></li>
+			 <li><a class="excecute" data-excecute="aboutus" href="#AboutUsHtml">About Us</a></li>
+			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
+			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
+			</ul>
+	</div><!-- /panel -->
+ 
+</div>
+
 
 <div data-role="page" id="settingHtml" style="background:#fff;">
 
@@ -1039,12 +1261,86 @@
        //alert(search);
 	   $.post('fetch_pages.php',{'search': search,page:0}, function(data) {
 			
-				
 				$("#webWeeklyHtml").contents().find("#results").empty();
 				$("#webWeeklyHtml").contents().find("#results").append(data);
 				
-				
+			}).fail(function(xhr, ajaxOptions, thrownError) { 
+				alert(thrownError); //alert any HTTP error
+				$(".load_more").show(); //bring back load more button
+				$('.animation_image').hide(); //hide loading image once data is received
+			});
+	   
+    }
+	});
+	$(document).keyup(function (e) {
+	
+    if ($(".searchTest:focus") && (e.keyCode === 13)) {
+	   var search = $("input#searchTest").val();
+	   
+       //alert(search);
+	   $.post('fetch_pagesTest.php',{'searchTest': search,page:0}, function(data) {
 			
+				$("#webTestimonialsHtml").contents().find("#results").empty();
+				$("#webTestimonialsHtml").contents().find("#results").append(data);
+				
+			}).fail(function(xhr, ajaxOptions, thrownError) { 
+				alert(thrownError); //alert any HTTP error
+				$(".load_more").show(); //bring back load more button
+				$('.animation_image').hide(); //hide loading image once data is received
+			});
+	   
+    }
+	});
+	
+	$(document).keyup(function (e) {
+	
+    if ($(".searchFaq:focus") && (e.keyCode === 13)) {
+	   var search = $("input#searchFaq").val();
+	   
+       //alert(search);
+	   $.post('fetch_pagesFaq.php',{'searchFaq': search,page:0}, function(data) {
+			
+				$("#webFaqHtml").contents().find("#results").empty();
+				$("#webFaqHtml").contents().find("#results").append(data);
+				
+			}).fail(function(xhr, ajaxOptions, thrownError) { 
+				alert(thrownError); //alert any HTTP error
+				$(".load_more").show(); //bring back load more button
+				$('.animation_image').hide(); //hide loading image once data is received
+			});
+	   
+    }
+	});
+	
+	$(document).keyup(function (e) {
+	if ($(".searchArt:focus") && (e.keyCode === 13)) {
+	   var search = $("input#searchArt").val();
+	   
+       //alert(search);
+	   $.post('fetch_pagesArt.php',{'searchArt': search,page:0}, function(data) {
+			
+				$("#webArticlesHtml").contents().find("#results").empty();
+				$("#webArticlesHtml").contents().find("#results").append(data);
+				
+			}).fail(function(xhr, ajaxOptions, thrownError) { 
+				alert(thrownError); //alert any HTTP error
+				$(".load_more").show(); //bring back load more button
+				$('.animation_image').hide(); //hide loading image once data is received
+			});
+	   
+    }
+	});
+	
+	$(document).keyup(function (e) {
+	if ($(".searchAudios:focus") && (e.keyCode === 13)) {
+	   var search = $("input#searchAudios").val();
+	   
+       //alert(search);
+	   $.post('fetch_pagesAudios.php',{'searchAudios': search,page:0}, function(data) {
+			
+				$("#webAudiosHtml").contents().find("#results").empty();
+				$("#webAudiosHtml").contents().find("#results").append(data);
+				
 			}).fail(function(xhr, ajaxOptions, thrownError) { 
 				alert(thrownError); //alert any HTTP error
 				$(".load_more").show(); //bring back load more button
@@ -1077,18 +1373,78 @@
 			$('#hideText').fadeIn();
 		});
 		
-		$('#hide').click(function(){
-			$('#search2').animate({width:'toggle'},1000);
+		//hide1	
+		$('#hideText').click(function(){
+			$('#search').animate({width:'toggle'},1000);
 			$(this).fadeOut();
-			$('#show').fadeIn();
+			$('#showText').fadeIn();
 		});
 
-		$('#show').click(function(){
-			$('#search2').animate({width:'toggle'},1000);
+		$('#showText').click(function(){
+			$('#search').animate({width:'toggle'},1000);
 			$(this).fadeOut();
-			
-						
-			$('#hide').fadeIn();
+			$('#hideText').fadeIn();
+		});
+		
+		//hide1	
+		$('#hide1').click(function(){
+			$('#searchWeekly').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#show1').fadeIn();
+		});
+
+		$('#show1').click(function(){
+			$('#searchWeekly').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#hide1').fadeIn();
+		});
+		//hide2
+		$('#hide2').click(function(){
+			$('#searchTest').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#show2').fadeIn();
+		});
+
+		$('#show2').click(function(){
+			$('#searchTest').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#hide2').fadeIn();
+		});
+		//hide3
+		$('#hide3').click(function(){
+			$('#searchFaq').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#show3').fadeIn();
+		});
+
+		$('#show3').click(function(){
+			$('#searchFaq').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#hide3').fadeIn();
+		});
+		//hide4
+		$('#hide4').click(function(){
+			$('#searchArt').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#show4').fadeIn();
+		});
+
+		$('#show4').click(function(){
+			$('#searchArt').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#hide4').fadeIn();
+		});
+		//hide5
+		$('#hide5').click(function(){
+			$('#searchAudios').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#show5').fadeIn();
+		});
+
+		$('#show5').click(function(){
+			$('#searchAudios').animate({width:'toggle'},1000);
+			$(this).fadeOut();
+			$('#hide5').fadeIn();
 		});
 		
 				
