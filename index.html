@@ -143,7 +143,7 @@
 				
 				<div id='search' style='position:absolute; left: -190px; top: -1px; display:none;white-space: nowrap'>
 				<input type="text" id="search" name="search"></div>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/quit-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="indexMobile.html">No text</a>				
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/quit-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" onclick="showConfirm();return false;">No text</a>				
 			</div>
 		</div>
 
@@ -1246,6 +1246,27 @@
 
 <script type="text/javascript">
 	//menuClick('menu-home');
+	
+	function exitFromApp(){
+        //console.log("in button");
+        navigator.app.exitApp();
+    }
+	
+	function showConfirm() {
+        navigator.notification.confirm(
+            'Do you really want to exit?',  // message
+            exitFromApp,              // callback to invoke with index of button pressed
+            'Exit',            // title
+            'Cancel,OK'         // buttonLabels
+        );
+    }
+ 
+    
+    function exitFromApp(buttonIndex) {
+      if (buttonIndex==2){
+       navigator.app.exitApp();
+		}
+	}
 
 	$(document).keyup(function (e) {
 	
