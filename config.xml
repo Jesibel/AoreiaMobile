@@ -25,6 +25,13 @@
  <preference name="orientation" value="portrait" />
  <!--preference name="stay-in-webview" value="true" /--> 
 
+ <!-- images de splashscreen-->
+ 
+ <Brecha: splash  src = "resources/image/logo36.png"  brecha: Plataforma = "android"  brecha: densidad = "LDPI"  />
+ <Brecha: splash  src = "resources/image/logo48.png"  brecha: Plataforma = "android"  brecha: densidad = "MDPI"  />
+ <Brecha: splash  src = "resources/image/logo72.png"  brecha: Plataforma = "android"  brecha: densidad = "HDPI"  />
+ <Brecha: splash  src = "resources/image/logo96.png"  brecha: Plataforma = "android"  brecha: densidad = "XHDPI"  />
+ 
  
  <!-- Define app icon for each platform. -->
     <icon src="resources/image/icon.png" />
