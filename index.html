@@ -128,6 +128,13 @@
 	
 </head>
 <body overflow:hidden;>
+
+<div data-role="page" data-theme="b" id="splash" style="background-color: #fff;"> 
+    <div class="splash">
+        <img src="resources/img/logo_aoreia.png" alt="splash" />
+    </div>
+</div> 
+
 <div data-role="page" id="inicio" style="background:#fff;" class="hei">
 	
 	<div data-role="header" data-position="fixed" style="background:#E98C40;height:50px;">
@@ -1440,6 +1447,13 @@
 
 <script type="text/javascript">
 	//menuClick('menu-home');
+	$(function() {
+	  setTimeout(hideSplash, 2000);
+	});
+
+	function hideSplash() {
+	  $.mobile.changePage("#inicio", "fade");
+	}
 	
 	function exitFromApp(){
         //console.log("in button");
