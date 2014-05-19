@@ -36,7 +36,7 @@
   <icon src="resources/image/logo36.png"   gap:platform="android"    gap:density="ldpi" />
   <icon src="resources/image/logo48.png"   gap:platform="android"    gap:density="mdpi" />
   <icon src="resources/image/logo72.png"   gap:platform="android"    gap:density="hdpi" />
-  <icon src="resources/image/logo96"       gap:platform="android"    gap:density="xhdpi" />
+  <icon src="resources/image/logo96.png"   gap:platform="android"    gap:density="xhdpi" />
   
   <!--icon src="res/icon/blackberry/icon-80.png"  gap:platform="blackberry" />
   <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/>
