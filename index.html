@@ -12,6 +12,7 @@
 	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
 	<!--script>document.location='http://test.aoreia.com';</script-->
 	<link href="http://test.aoreia.com/resources/css/style.css" rel="stylesheet" type="text/css" />
+	<link href="http://test.aoreia.com/resources/css/index.css" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="http://test.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.css" type="text/css" media="screen">
 	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/demos/js/jquery.js"></script>
 	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.js"></script>	
@@ -465,24 +466,27 @@
 			 <!--li data-icon="delete"-->
 			  <a class="closeMenu" style="display:none;" href="#" data-rel="close">Close</a>
 			 <!--/li-->
-			 <!--li data-role="list-divider">Share this page</li-->
-			 <li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li>
-			 <li><a class="excecute" data-excecute="weekly" href="#weeklyHtml">Weekly Insight</a></li>
-			 <li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Clasifieds</a></li>
-			 <li><a class="excecute" data-excecute="store" href="#">Store</a></li>
-			 <li><a class="excecute" data-excecute="testomonials" href="#testimonialsHtml">Testimonials</a></li>
-			 <li><a class="excecute" data-excecute="faq"  href="#faqHtml">FAQ</a></li>
-			 <li><a class="excecute" data-excecute="audios" href="#audiosHtml">Audios</a></li>
-			 <li><a class="excecute" data-excecute="articles" href="#articlesHtml">Articles</a></li>
-			 <li><a class="excecute" data-excecute="videos" href="#videosHtml">Videos Books</a></li>
-			 <li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Clasifieds</a></li>
-			 <li><a class="excecute" data-excecute="meetings"  href="#meetingsHtml">Meetings Archives</a></li>
-			 <li><a class="excecute" data-excecute="recent"  href="#recentHtml">Recent Deals</a></li>
-			 <li><a class="excecute" data-excecute="files" href="#filesHtml">Files</a></li>
-			 <li><a class="excecute" data-excecute="legal"  href="#legalHtml">Legal</a></li>
-			 <li><a class="excecute" data-excecute="contactus" href="#contactUsHtml">Contacts Us</a></li>
-			 <li><a class="excecute" data-excecute="aboutus" href="#AboutUsHtml">About Us</a></li>
-			 <li><a class="excecute" data-excecute="Glossary" href="#glossaryHtml">Glossary</a></li>
+			 <!--li data-role="list-divider">Share this page</li style="background-image: url('resources/img/new2/a-weekly_insight.png');background-repeat:no-repeat;background-size: 50px 50px;"-->
+			 <!--li><a class="excecute" data-excecute="settings" href="#settingHtml">My Settings</a></li-->
+			 <li><a class="excecute weekly" data-excecute="weekly" href="#weeklyHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Weekly Insight</a></li>
+			 <!--li><a class="excecute" data-excecute="classifieds"  href="#classifiedsHtml">Clasifieds</a></li-->
+			 <li><a class="excecute store" data-excecute="store" href="#" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Store</a></li>
+			 <li><a class="excecute testi" data-excecute="testomonials" href="#testimonialsHtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Testimonials</a></li>
+			 <li><a class="excecute faq" data-excecute="faq"  href="#faqHtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FAQ</a></li>
+			 <li><a class="excecute audio" data-excecute="audios" href="#audiosHtml">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Audios</a></li>
+			 <li><a class="excecute article" data-excecute="articles" href="#articlesHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Articles</a></li>
+			 <li><a class="excecute video" data-excecute="videos" href="#videosHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Videos Books</a></li>
+			 <!--li><a class="excecute" data-excecute="myclassifieds"  href="#myclassifiedsHtml">My Clasifieds</a></li-->
+			 <li><a class="excecute meeting" data-excecute="meetings"  href="#meetingsHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Meetings Archives</a></li>
+			 <li><a class="excecute recent" data-excecute="recent"  href="#recentHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Recent Deals</a></li>
+			 <li><a class="excecute files" data-excecute="files" href="#filesHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Files</a></li>
+			 <li><a class="excecute legal" data-excecute="legal"  href="#legalHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Legal</a></li>
+			 <li><a class="excecute contact" data-excecute="contactus" href="#contactUsHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contacts Us</a></li>
+			 <li><a class="excecute about" data-excecute="aboutus" href="#AboutUsHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About Us</a></li>
+			 <li><a class="excecute glossary" data-excecute="Glossary" href="#glossaryHtml" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Glossary</a></li>
+			 <li><a class="excecute facebook" data-excecute="Facebook" href="http://www.facebook.com/pages/Americas-Online-REIA-LLC/122993624562827?skip_nax_wizard=true" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Facebook</a></li>
+			 <li><a class="excecute twitter" data-excecute="Twitter" href="https://twitter.com/AOREIA" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Twitter</a></li>
+			 <li><a class="excecute linkedin" data-excecute="Linkedin" href="http://www.linkedin.com/pub/americas-online-reia-llc/6a/933/928" target="_blank" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Linkedin</a></li>
 			 <!--li><a class="excecute" data-excecute="managerSearch" href="javascript:void(0);">NewsLetters</a></li-->
 			</ul>
 		</div><!-- /panel -->
