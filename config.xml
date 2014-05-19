@@ -33,10 +33,10 @@
  
  <!-- Define app icon for each platform. -->
   <icon src="resources/image/icon.png" />
-  <icon src="resources/image/logo36.png"   gap:platform="android"    gap:density="ldpi" />
-  <icon src="resources/image/logo48.png"   gap:platform="android"    gap:density="mdpi" />
-  <icon src="resources/image/logo72.png"   gap:platform="android"    gap:density="hdpi" />
-  <icon src="resources/image/logo96.png"   gap:platform="android"    gap:density="xhdpi" />
+  <icon src="resources/image/logo_aoreia_480.png"   gap:platform="android"    gap:density="ldpi" />
+  <icon src="resources/image/logo_aoreia_768.png"   gap:platform="android"    gap:density="mdpi" />
+  <icon src="resources/image/logo_aoreia_960.png"   gap:platform="android"    gap:density="hdpi" />
+  <icon src="resources/image/logo_aoreia_1024.png"   gap:platform="android"    gap:density="xhdpi" />
   
   <!--icon src="res/icon/blackberry/icon-80.png"  gap:platform="blackberry" />
   <icon src="res/icon/blackberry/icon-80.png"     gap:platform="blackberry" gap:state="hover"/>
@@ -53,7 +53,7 @@
   <gap:splash src="resources/image/logo36.png"       gap:platform="android" gap:qualifier="port-ldpi" />
   <gap:splash src="resources/image/logo48.png"       gap:platform="android" gap:qualifier="port-mdpi" />
   <gap:splash src="resources/image/logo72.png"       gap:platform="android" gap:qualifier="port-hdpi" />
-  <gap:splash src="resources/image/logo96.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+  <gap:splash src="resources/image/logo96.png"       gap:platform="android" gap:qualifier="port-xhdpi" />
   <!--gap:splash src="res/screen/blackberry/screen-225.png"              gap:platform="blackberry" />
   <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
   <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
