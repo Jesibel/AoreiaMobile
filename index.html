@@ -1471,25 +1471,24 @@
  
     
    
-	$(document).keyup(function (e) {
 	
-    if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
-	   var search = $("input#searchWeekly").val();
-	   
+	
+   
+	var search = $("input#searchWeekly").val();
        //alert(search);
-	   $.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
+	$.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
 			
-				$("#webWeeklyHtml").contents().find("#results").empty();
-				$("#webWeeklyHtml").contents().find("#results").append(data);
+		$("#webWeeklyHtml").contents().find("#results").empty();
+		$("#webWeeklyHtml").contents().find("#results").append(data);
 				
-			}).fail(function(xhr, ajaxOptions, thrownError) { 
-				//alert(thrownError); //alert any HTTP error
-				$(".load_more").show(); //bring back load more button
-				$('.animation_image').hide(); //hide loading image once data is received
-			});
-	   
-    }
+	}).fail(function(xhr, ajaxOptions, thrownError) { 
+		//alert(thrownError); //alert any HTTP error
+		$(".load_more").show(); //bring back load more button
+		$('.animation_image').hide(); //hide loading image once data is received
 	});
+	   
+    
+	
 	$(document).keyup(function (e) {
 	
     if ($(".searchTest:focus") && (e.keyCode === 13)) {
