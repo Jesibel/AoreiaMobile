@@ -18,11 +18,15 @@
 	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.js"></script>	
 	<style>
 	 .tails{
-		padding:0;
-		min-height:68px;
+		/*padding:0;*/
+		/*min-height:68px;*/
 		background-color:#fff;
 		border-color:#fff;
 		
+	 }
+	 
+	 .body{
+		overflow:hidden;
 	 }
 	 
 	 .excecute{
@@ -46,64 +50,131 @@
 		width:20%;
 	 }
 	 
+	 .responsive-image{
+		width: 70%;
+		background-size: 50% 50%;
+	}
+
+	.ui-fixed-hidden{
+	  position:fixed;
+    }	
+	 
+	 
+	
+	 
 	
 @media screen and (max-width: 480px) {
-		#ui-content { float: none; width: 100%; }
-		#sidebar { float: none; width: 100%; padding: 20px; }
-		
-		.grid {float:none; margin:0;}
-		
-		.grid2 {max-height:78px;}
-		.grid3 {margin-top:-10px;}
-		
-		.tails{padding-left:45px;width:100%;min-height:68px;background-color:#fff;border-color:#fff; color:#fff;}
-		
-		.ui-grid-a > .ui-block-a, .ui-grid-a > .ui-block-b {
-			width: 97%;
-		}
-		img{}
-		
-		.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
-			background-color: transparent !important;
-			border-color: transparent !important;
-			color: #333333;
-			text-shadow: 0 1px 0 #F3F3F3;
-			/*padding:0;*/
-		}
-		
-		.btn{
-			padding:0;
-			left:-34px;
-			right:-22px;
-		}
+	#ui-content { float: none; width: 100%; }
+	#sidebar { float: none; width: 100%; padding: 20px; }
 	
-		.forgot{
-			background-color: #333333;
-			text-shadow: 0 1px 0 #F3F3F3;
-		}
+	.body{
+		overflow:hidden;
+	 }
+	 
+	.grid {float:none; margin:0;}
 	
-		.left{
-			left:30px;
+	.grid2 {max-height:78px;}
+	.grid3 {margin-top:-10px;}
 		
-		}
-		
-		.hei{
-		height:90%;
-		}
-	
-		/*.face{
-			background-repeat:no-repeat;
-			padding:0;
-		}*/
-		.nada{
-			display:none;	
-		}
-	
-		img{
-			max-width:100%;
-		}
-	
+	.tails{/*padding-left:50px;*//*width:100%;*//*min-height:68px;*/background-color:#fff;border-color:#fff; color:#fff;border:none;}
+	.ui-grid-a > .ui-block-a, .ui-grid-a > .ui-block-b {
+		width: 100%;
+			
 	}
+	
+	.ui-bar, .ui-body{
+	 padding:0.2em 0;
+	 text-align:center;
+	}
+	
+	.excecute{
+		padding: 0.7em 1em;
+	}
+	
+	.aoreia-btn{
+	 background-color: rgba(0, 0, 0, 0) !important;
+    border: medium none;
+    box-shadow: none;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0 1px 0 #F3F3F3;
+	}
+	
+		
+	.ui-page-theme-a .ui-btn, html .ui-bar-a .ui-btn, html .ui-body-a .ui-btn, html body .ui-group-theme-a .ui-btn, html head + body .ui-btn.ui-btn-a, .ui-page-theme-a .ui-btn:visited, html .ui-bar-a .ui-btn:visited, html .ui-body-a .ui-btn:visited, html body .ui-group-theme-a .ui-btn:visited, html head + body .ui-btn.ui-btn-a:visited {
+		background-color: rgba(0, 0, 0, 0) !important;
+		border: medium none;
+		box-shadow: none;
+		color: #333333;
+		margin: 0;
+		padding: 0;
+		/*text-shadow: 0 1px 0 #F3F3F3;*/
+		display:inline;
+		border-radius:0;
+	}
+	.btn{
+		padding:0;
+		left:-52px;
+		right:-22px;
+	}
+	
+	.ui-btn2{
+	position:relative;
+	}
+	
+	.forgot{
+		background-color: #333333;
+		text-shadow: 0 1px 0 #F3F3F3;
+	}
+	
+	.left{
+		left:30px;		
+	}
+	
+	.hei{
+		height:90%;
+	}
+	
+	.face{
+		
+		/*background-repeat:no-repeat;*/
+		padding:0;
+	}
+	.nada{display:none;}
+	
+	.ui-page-header-fixed {
+		padding-top: 0.8125em !important;
+		margin-top:50px !important;
+		height:50px;
+	}
+	
+	.ui-btn-icon-left:after, .ui-btn-icon-right:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after, .ui-btn-icon-notext:after {
+	  content: "";
+	  display: block;
+	  height: 30px;
+	  position: relative;
+	  width: 30px;
+	}
+	.ui-btn-icon-notext:after, .ui-btn-icon-left:after, .ui-btn-icon-right:after {
+	  margin-top: -15px;
+	  top: 50%;
+	}
+	.ui-btn-icon-notext:after, .ui-btn-icon-top:after, .ui-btn-icon-bottom:after {
+		left: 50%;
+        margin-left: -15px;
+   }
+
+	.ui-fixed-hidden{
+	  position:fixed;
+    }
+	
+	.ui-controlgroup-horizontal .ui-controlgroup-controls .ui-btn-icon-notext, .ui-controlgroup-horizontal .ui-controlgroup-controls button.ui-btn-icon-notext {
+		width: 1.9em;
+	}
+	
+}
+	
 	
 	
 	@media screen and (min-width: 480px){
@@ -114,16 +185,17 @@
 		}
 		
 		.tails{padding:0;width:100%;background-color:#fff;border-color:#fff;}
-		
-		.nada{
-			background-repeat:no-repeat;
-			padding:0;
-		}
-		
 		.face{
-			display:none;	
+		display:none;
 		}
 		
+		img{
+		width:100%;
+		}
+		 .responsive-image{
+		width: 40%;
+		background-size: 50% 50%;
+	} 
 	}
 	</style>
 	
@@ -186,7 +258,7 @@
 						
 						<div class="ui-block-b grid" >
 							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#weeklyHtml" data-transition="slide" data-title="AOREIA WEEKLY" data-src="http://test.aoreia.com/weekly_insight.php?p=1" data-excecute="weekly" role="button">
+								<a  href="#weeklyHtml" data-transition="slide" data-title="AOREIA WEEKLY" data-src="http://test.aoreia.com/weekly_insight.php?p=1" data-excecute="weekly" role="button">
 								<img class="nada" src="http://test.aoreia.com/resources/img/new/weeklyinsight.png">
 								<img class="face" src="http://test.aoreia.com/resources/img/new2/weekly_insight.png">
 								</a>
@@ -195,7 +267,7 @@
 						
 						<div class="ui-block-a grid" >
 							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#testimonialsHtml" data-transition="slide" data-title="AOREIA TESTIMONIALS" data-src="http://test.aoreia.com/testimonials.php" data-excecute="testimonials" role="button">
+								<a  href="#testimonialsHtml" data-transition="slide" data-title="AOREIA TESTIMONIALS" data-src="http://test.aoreia.com/testimonials.php" data-excecute="testimonials" role="button">
 								<img class="nada" src="http://test.aoreia.com/resources/img/new/testimonials.png">
 								<img class="face" src="http://test.aoreia.com/resources/img/new2/testimonials.png">
 								</a>
@@ -203,7 +275,7 @@
 						</div>
 						<div class="ui-block-b grid">
 							<div class="ui-bar ui-bar-a tails">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#faqHtml" data-transition="slide" data-title="AOREIA FAQ" data-src="http://test.aoreia.com/faq.php" data-excecute="faq" role="button">
+								<a  href="#faqHtml" data-transition="slide" data-title="AOREIA FAQ" data-src="http://test.aoreia.com/faq.php" data-excecute="faq" role="button">
 								<img class="nada" src="http://test.aoreia.com/resources/img/new/faq.png">
 								<img class="face" src="http://test.aoreia.com/resources/img/new2/faq.png">
 								</a>
@@ -220,7 +292,7 @@
 
 						<div class="ui-block-a grid nada">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#classifiedsHtml" data-transition="slide" data-title="AOREIA CLASSIFIEDS" data-src="http://test.aoreia.com/classifieds.php" data-excecute="classifieds" role="button">
+								<a  href="#classifiedsHtml" data-transition="slide" data-title="AOREIA CLASSIFIEDS" data-src="http://test.aoreia.com/classifieds.php" data-excecute="classifieds" role="button">
 								<img src="http://test.aoreia.com/resources/img/new/classifieds.png">
 								</a>
 							</div>
@@ -229,7 +301,7 @@
 
 						<div class="ui-block-b grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#" data-excecute="store" role="button">
+								<a  href="#" data-excecute="store" role="button">
 								<img class="nada" src="http://test.aoreia.com/resources/img/new/store.png">
 								<img class="face" src="http://test.aoreia.com/resources/img/new2/store.png">
 								</a>
@@ -238,7 +310,7 @@
 						
 						<div class="ui-block-a grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#audiosHtml" data-transition="slide" data-title="AOREIA AUDIOS BOOKS" data-src="http://test.aoreia.com/audios.php" data-excecute="audiosbooks" role="button">
+								<a  href="#audiosHtml" data-transition="slide" data-title="AOREIA AUDIOS BOOKS" data-src="http://test.aoreia.com/audios.php" data-excecute="audiosbooks" role="button">
 								<img class="nada" src="http://test.aoreia.com/resources/img/new/audiobooks.png">
 								<img class="face" src="http://test.aoreia.com/resources/img/new2/audio_books.png">
 								</a>
@@ -246,7 +318,7 @@
 						</div>
 						<div class="ui-block-b grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#videosHtml" data-transition="slide" data-title="AOREIA VIDEOS" data-src="http://test.aoreia.com/videos.php" data-excecute="videos" role="button">
+								<a  href="#videosHtml" data-transition="slide" data-title="AOREIA VIDEOS" data-src="http://test.aoreia.com/videos.php" data-excecute="videos" role="button">
 									<img class="nada" src="http://test.aoreia.com/resources/img/new/videos.png">
 									<img class="face" src="http://test.aoreia.com/resources/img/new2/videos.png">
 								</a>
@@ -262,7 +334,7 @@
 
 						<div class="ui-block-a grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#filesHtml" data-transition="slide" data-title="AOREIA FILES" data-src="http://test.aoreia.com/aofiles.php" data-excecute="files" role="button">
+								<a  href="#filesHtml" data-transition="slide" data-title="AOREIA FILES" data-src="http://test.aoreia.com/aofiles.php" data-excecute="files" role="button">
 									<img class="nada" src="http://test.aoreia.com/resources/img/new/files.png">
 									<img class="face" src="http://test.aoreia.com/resources/img/new2/files.png">
 								</a>
@@ -274,7 +346,7 @@
 						<div class="ui-block-b grid">
 						
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#articlesHtml" data-transition="slide" data-title="AOREIA ARTICLES" data-src="http://test.aoreia.com/articles.php" data-excecute="articles" role="button">
+								<a  href="#articlesHtml" data-transition="slide" data-title="AOREIA ARTICLES" data-src="http://test.aoreia.com/articles.php" data-excecute="articles" role="button">
 								<img class="nada" src="http://test.aoreia.com/resources/img/new/article.png">
 								<img class="face" src="http://test.aoreia.com/resources/img/new2/article.png">
 								</a>
@@ -284,7 +356,7 @@
 						
 						<div class="ui-block-a grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#recentHtml" data-transition="slide" data-title="AOREIA RECENT DEALS" data-src="http://test.aoreia.com/recentdeals.php" data-excecute="recent_deals" role="button">
+								<a  href="#recentHtml" data-transition="slide" data-title="AOREIA RECENT DEALS" data-src="http://test.aoreia.com/recentdeals.php" data-excecute="recent_deals" role="button">
 									<img class="nada" src="http://test.aoreia.com/resources/img/new/recent_deal.png">
 									<img class="face" src="http://test.aoreia.com/resources/img/new2/recent_deal.png">									
 								</a>
@@ -292,7 +364,7 @@
 						</div>
 						<div class="ui-block-b grid nada">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#legalHtml" data-transition="slide" data-title="AOREIA LEGAL" data-src="http://test.aoreia.com/legal.php" data-excecute="legal" role="button">
+								<a  href="#legalHtml" data-transition="slide" data-title="AOREIA LEGAL" data-src="http://test.aoreia.com/legal.php" data-excecute="legal" role="button">
 									<img src="http://test.aoreia.com/resources/img/new/legal.png">
 								</a>
 							</div>
@@ -308,7 +380,7 @@
 
 						<div class="ui-block-a grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#meetingsHtml" data-transition="slide" data-title="AOREIA MEETINGS ARCHIVE" data-src="http://test.aoreia.com/meeting.php" data-excecute="meetings" role="button">
+								<a  href="#meetingsHtml" data-transition="slide" data-title="AOREIA MEETINGS ARCHIVE" data-src="http://test.aoreia.com/meeting.php" data-excecute="meetings" role="button">
 									<img class="nada" src="http://test.aoreia.com/resources/img/new/meeting_archives.png">
 									<img class="face" src="http://test.aoreia.com/resources/img/new2/meeting_archives.png">
 								</a>
@@ -318,7 +390,7 @@
 
 						<div class="ui-block-b grid nada">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#myclassifiedsHtml" data-transition="slide" data-title="AOREIA MY CLASSIFIEDS" data-src="http://test.aoreia.com/my_classifieds.php" data-excecute="myclassifieds" role="button">
+								<a  href="#myclassifiedsHtml" data-transition="slide" data-title="AOREIA MY CLASSIFIEDS" data-src="http://test.aoreia.com/my_classifieds.php" data-excecute="myclassifieds" role="button">
 									<img src="http://test.aoreia.com/resources/img/new/my_classifieds.png">
 								</a>
 							</div>
@@ -338,16 +410,16 @@
 							</div>
 						</div-->
 						
-						<div class="ui-block-a grid grid2 grid3">
+						<div class="ui-block-a grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="nada excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#contactUsHtml" data-transition="slide" data-title="AOREIA CONTACTS US" data-src="contactus.php" data-excecute="professional" role="button">
+								<a class="nada" href="#contactUsHtml" data-transition="slide" data-title="AOREIA CONTACTS US" data-src="contactus.php" data-excecute="professional" role="button">
 									<img class="nada" src="http://test.aoreia.com/resources/img/new/contactus.png">
 								</a>
 								
-								<a style="width:53%;left:-45px;top:5px;padding:0;" class="face excecute " href="#contactUsHtml" data-transition="slide" data-title="AOREIA CONTACTS US" data-src="contactus.php" data-excecute="professional" role="button">
+								<a style="width: 48%; float: left;" class="face" href="#contactUsHtml" data-transition="slide" data-title="AOREIA CONTACTS US" data-src="contactus.php" data-excecute="professional" role="button">
 									<img class="face" src="http://test.aoreia.com/resources/img/new2/contact_us_mini.png">
 								</a>	
-								<a style="width:53%;left:135px;top:-65px;padding:0;" class="face excecute " href="#aboutUsHtml" data-transition="slide" data-title="AOREIA CONTACTS US" data-src="contactus.php" data-excecute="professional" role="button">
+								<a style="width: 48%; float: right;" class="face" href="#aboutUsHtml" data-transition="slide" data-title="AOREIA CONTACTS US" data-src="contactus.php" data-excecute="professional" role="button">
 									<img  class="face" src="http://test.aoreia.com/resources/img/new2/about_us_mini.png">
 								</a>																
 							</div>
@@ -356,7 +428,7 @@
 
 						<div class="ui-block-b grid nada">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#aboutUsHtml" data-transition="slide" data-title="AOREIA ABOUT US" data-src="http://test.aoreia.com/aboutus.php" data-excecute="testFunction" role="button">
+								<a  href="#aboutUsHtml" data-transition="slide" data-title="AOREIA ABOUT US" data-src="http://test.aoreia.com/aboutus.php" data-excecute="testFunction" role="button">
 									<img src="http://test.aoreia.com/resources/img/new/aboutus.png">
 								</a>
 							</div>
@@ -380,25 +452,25 @@
 								</a>
 							</div>
 						</div-->
-						<div class="ui-block-a grid grid2">
+						<div class="ui-block-a grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class=" nada excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" target="_blank" href="http://www.facebook.com/pages/Americas-Online-REIA-LLC/122993624562827?skip_nax_wizard=true" data-excecute="nothing" role="button">
+								<a class=" nada" target="_blank" href="http://www.facebook.com/pages/Americas-Online-REIA-LLC/122993624562827?skip_nax_wizard=true" data-excecute="nothing" role="button">
 									<img class="nada" src="http://test.aoreia.com/resources/img/new/facebook.png">
 								</a>
-								<a style="width:33%;left:-44px;top:2px;padding:0;" class="face excecute " target="_blank" href="http://www.facebook.com/pages/Americas-Online-REIA-LLC/122993624562827?skip_nax_wizard=true" data-excecute="nothing" role="button">	
-									<img class="face excecute ui-link ui-btn2 ui-shadow ui-corner-all" src="http://test.aoreia.com/resources/img/new2/facebook_mini.png">
-								<a style="width:33%;left:72px;top:-67px;padding:0;"class=" face excecute " href="https://twitter.com/AOREIA" target="_blank" data-excecute="nothing" role="button">
-									<img class="face excecute ui-link ui-btn2 ui-shadow ui-corner-all" src="http://test.aoreia.com/resources/img/new2/twitter_mini.png">
+								<a style="width:30%;float:left;" class="face" target="_blank" href="http://www.facebook.com/pages/Americas-Online-REIA-LLC/122993624562827?skip_nax_wizard=true" data-excecute="nothing" role="button">	
+									<img class="face" src="http://test.aoreia.com/resources/img/new2/facebook_mini.png">
+								<a style="width:30%;float:left;margin-left:1em;"class=" face excecute " href="https://twitter.com/AOREIA" target="_blank" data-excecute="nothing" role="button">
+									<img class="face" src="http://test.aoreia.com/resources/img/new2/twitter_mini.png">
 								</a>	
-								<a style="width:33%;left:192px;top:-137px;padding:0;" class=" face excecute " target="_blank" href="http://www.linkedin.com/pub/americas-online-reia-llc/6a/933/928" data-excecute="nothing" role="button">	
-									<img class="face excecute ui-link ui-btn2 ui-shadow ui-corner-all" src="http://test.aoreia.com/resources/img/new2/linkedin_mini.png">
+								<a style="width:30%;float:right;" class=" face excecute " target="_blank" href="http://www.linkedin.com/pub/americas-online-reia-llc/6a/933/928" data-excecute="nothing" role="button">	
+									<img class="face" src="http://test.aoreia.com/resources/img/new2/linkedin_mini.png">
 								</a>
 							</div>
 						</div>
 						
 						<div class="ui-block-b grid nada">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" target="_blank" href="http://www.linkedin.com/pub/americas-online-reia-llc/6a/933/928" data-excecute="nothing" role="button">
+								<a  target="_blank" href="http://www.linkedin.com/pub/americas-online-reia-llc/6a/933/928" data-excecute="nothing" role="button">
 									<img src="http://test.aoreia.com/resources/img/new/linkedin.png">
 								</a>
 							</div>
@@ -417,7 +489,7 @@
 					
 					<div class="ui-block-a grid nada">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="https://twitter.com/AOREIA" target="_blank" data-excecute="nothing" role="button">
+								<a  href="https://twitter.com/AOREIA" target="_blank" data-excecute="nothing" role="button">
 								<img src="http://test.aoreia.com/resources/img/new/twitter.png">
 								</a>
 							</div>
@@ -433,16 +505,16 @@
 							</div>
 						</div-->
 						
-						<div class="ui-block-b grid grid2">
+						<div class="ui-block-b grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
-								<a class="nada excecute " href="#glossaryHtml" data-transition="slide" data-title="AOREIA GLOSSARY" data-src="glossary.php" data-excecute="glossary" role="button">
+								<a class="nada " href="#glossaryHtml" data-transition="slide" data-title="AOREIA GLOSSARY" data-src="glossary.php" data-excecute="glossary" role="button">
 								<img class="nada" src="http://test.aoreia.com/resources/img/new/glossary.png">
 								</a>
-								<a style="width:50%;left:-47px;" class="face excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#legalHtml" data-transition="slide" data-title="AOREIA LEGAL" data-src="legal.php" data-excecute="legal" role="button">
-								<img class="face excecute " src="http://test.aoreia.com/resources/img/new2/legal_mini.png">	
+								<a style="width: 48%; float: left;" class="face" href="#legalHtml" data-transition="slide" data-title="AOREIA LEGAL" data-src="legal.php" data-excecute="legal" role="button">
+								<img class="face " src="http://test.aoreia.com/resources/img/new2/legal_mini.png">	
 								</a>
-								<a style="width:50%;left:130px;top:-70px;" class="face excecute ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#glossaryHtml" data-transition="slide" data-title="AOREIA GLOSSARY" data-src="glossary.php" data-excecute="glossary" role="button">
-								<img class="face excecute " src="http://test.aoreia.com/resources/img/new2/glosary_mini.png">
+								<a style="width: 48%; float: right;" class="face" href="#glossaryHtml" data-transition="slide" data-title="AOREIA GLOSSARY" data-src="glossary.php" data-excecute="glossary" role="button">
+								<img class="face" src="http://test.aoreia.com/resources/img/new2/glosary_mini.png">
 								</a>
 							</div>
 						</div>
