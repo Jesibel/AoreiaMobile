@@ -1518,16 +1518,18 @@
 	   var search = $("input#searchWeekly").val();
 	   
        //alert(search);
-	   $.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
+	    $.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
 			
 				$("#webWeeklyHtml").contents().find("#results").empty();
 				$("#webWeeklyHtml").contents().find("#results").append(data);
 				
-			}).fail(function(xhr, ajaxOptions, thrownError) { 
-				alert('aquiii'); //alert any HTTP error
+		}).fail(function(xhr, ajaxOptions, thrownError) { 
+				consola.log (thrownError);//alert any HTTP error
+				consola.log (xhr);
+				consola.log (ajaxOptions);
 				$(".load_more").show(); //bring back load more button
 				$('.animation_image').hide(); //hide loading image once data is received
-			});
+		});
 	   
     }
 	
