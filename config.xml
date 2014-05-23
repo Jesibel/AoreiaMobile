@@ -31,7 +31,7 @@
   <!--preference name="stay-in-webview" value="true" /--> 
  
   <!--uses-permission  android:name = "android.permission.RECORD_AUDIO"  /-->
-  <uses-permission android:name="android.permission.INTERNET" />
+ 
 
   <gap:plugin name="com.rjfun.cordova.plugin.lowlatencyaudio"/> 
  
