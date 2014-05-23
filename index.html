@@ -509,7 +509,7 @@
 				<a id="show1" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://test.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
 				<div id='searchWeekly' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
-				<input type="search" id="searchWeekly" name="searchWeekly" onclick="myFunction()></div>
+				<input type="search" id="searchWeekly" name="searchWeekly"></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
 				<!--input type='button' id='showText' value='Show Text' style='display:none; position:absolute;right:0px;'-->
@@ -1507,17 +1507,17 @@
     
    
 	
-	function myFunction(){
-		var search = $("input#searchWeekly").val();
-		$.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
+	
+	
+	var search = $("input#searchWeekly").val();
+       //alert(search);
+	$.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
 			
 		$("#webWeeklyHtml").contents().find("#results").empty();
 		$("#webWeeklyHtml").contents().find("#results").append(data);
 				
-		});
-	}
-
-  
+	});
+	   
     
 	
 	$(document).keyup(function (e) {
