@@ -1519,7 +1519,8 @@ $(document).ready(function () {
 				$("#webWeeklyHtml").contents().find("#results").empty();
 				$("#webWeeklyHtml").contents().find("#results").append(data);
 				
-		}).fail(function(xhr, ajaxOptions, thrownError) { 
+		}).fail(function(xhr, ajaxOptions, thrownError) {
+			alert(data);
 				consola.log (thrownError);//alert any HTTP error
 				consola.log (xhr);
 				consola.log (ajaxOptions);
