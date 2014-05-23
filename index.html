@@ -1495,6 +1495,9 @@
         navigator.app.exitApp();
     }
 	
+$(document).ready(function () {
+		
+	
 	function showConfirm() {
         navigator.notification.confirm(
             'Do you really want to exit?',  // message
@@ -1504,13 +1507,6 @@
         );
     }
  
-    
-   
-	
-	
-	
-   
-    
 	
 	$(document).keyup(function (e) {
 	
@@ -1604,8 +1600,7 @@
     }
 	});
 
-	$(document).ready(function () {
-		
+	
 		$("#webVideosHtml,#webWeeklyHtml,#webTestimonialsHtml,#webFilesHtml,#webAudiosHtml,#webFaqHtml,#webMeetingHtml,#webArticlesHtml,#webLegalHtml,#webGlossaryHtml,#webContactsHtml,#webAboutHtml").height($(window).height()-$("div.ui-page-active div[data-role='header']").height()-7-43);
 		
     	$('#saveSettings').bind('click', function (e) {
