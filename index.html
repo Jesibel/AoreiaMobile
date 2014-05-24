@@ -934,7 +934,7 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="videos" data-theme="b" href="#videosHtml" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="videos" data-theme="b" href="#videosHtml" data-rel="back" id="backVideo">No text</a>
 				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://test.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="videos" data-theme="b" href="#nav-panel7">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
@@ -1581,6 +1581,14 @@ $(document).ready(function () {
  
 	
 	$(document).keyup(function (e) {
+	
+	document.addEventListener("backvideo", backKeyDown, true); 
+
+
+	function backKeyDown() { 
+		// Call my back key code here.
+		$.mobile.changePage("#videosHtml", "slideup");
+	}
 	
 	if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
 	   var search = $("input#searchWeekly").val();
