@@ -1591,7 +1591,7 @@ $(document).ready(function () {
     if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
         alert("The enter key was pressed");
 		
-		$.ajax({
+		/*$.ajax({
 			type: 'POST',
 			dataType: "json",
 			url: 'fetch_pages.php',
@@ -1607,21 +1607,21 @@ $(document).ready(function () {
 			error:function(){
 								
 			}
-		});
+		});*/
 		
-		/*$.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
-			
+		$.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
+				alert('Works!');
 				$("#webWeeklyHtml").contents().find("#results").empty();
 				$("#webWeeklyHtml").contents().find("#results").append(data);
 				
 		}).fail(function(xhr, ajaxOptions, thrownError) {
-			alert(data);
-				consola.log (thrownError);//alert any HTTP error
-				consola.log (xhr);
-				consola.log (ajaxOptions);
-				$(".load_more").show(); //bring back load more button
-				$('.animation_image').hide(); //hide loading image once data is received
-		});*/
+			alert('Not Works!');
+			consola.log (thrownError);//alert any HTTP error
+			consola.log (xhr);
+			consola.log (ajaxOptions);
+			$(".load_more").show(); //bring back load more button
+			$('.animation_image').hide(); //hide loading image once data is received
+		});
 		
        //e.preventDefault();
 	   
