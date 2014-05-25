@@ -1587,10 +1587,10 @@ $(document).ready(function () {
 		$.mobile.changePage("#videosHtml", "slideup");
 	}
 	
-	$("#searchWeekly").on("keypress", function(event){               
+	$("#searchWeekly").on("keypress", function(e){               
     if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
         alert("The enter key was pressed");
-        event.preventDefault();
+        e.preventDefault();
     }
 	});
 	
