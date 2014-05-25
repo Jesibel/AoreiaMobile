@@ -1590,7 +1590,7 @@ $(document).ready(function () {
 	$("#searchWeekly").on("keypress", function(e){               
     if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
         //alert("The enter key was pressed");
-		 e.preventDefault();
+		
 		$.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
 			
 				$("#webWeeklyHtml").contents().find("#results").empty();
@@ -1604,7 +1604,9 @@ $(document).ready(function () {
 				$(".load_more").show(); //bring back load more button
 				$('.animation_image').hide(); //hide loading image once data is received
 		});
-       
+		
+       e.preventDefault();
+	   
     }
 	});
 	
