@@ -1617,9 +1617,8 @@ $(document).ready(function () {
 				$("#webTestimonialsHtml").contents().find("#results").append(data);
 				
 			}).fail(function(xhr, ajaxOptions, thrownError) { 
-				alert(thrownError); //alert any HTTP error
-				$(".load_more").show(); //bring back load more button
-				$('.animation_image').hide(); //hide loading image once data is received
+				$("#webTestimonialsHtml").contents().find("#results").empty();
+				$("#webTestimonialsHtml").contents().find("#results").append(data);
 			});
 	   
     }
@@ -1635,9 +1634,8 @@ $(document).ready(function () {
 				$("#webFaqHtml").contents().find("#results").append(data);
 				
 			}).fail(function(xhr, ajaxOptions, thrownError) { 
-				alert(thrownError); //alert any HTTP error
-				$(".load_more").show(); //bring back load more button
-				$('.animation_image').hide(); //hide loading image once data is received
+				$("#webFaqHtml").contents().find("#results").empty();
+				$("#webFaqHtml").contents().find("#results").append(data);
 			});
 	   
     }
@@ -1652,9 +1650,8 @@ $(document).ready(function () {
 				$("#webArticlesHtml").contents().find("#results").append(data);
 				
 			}).fail(function(xhr, ajaxOptions, thrownError) { 
-				alert(thrownError); //alert any HTTP error
-				$(".load_more").show(); //bring back load more button
-				$('.animation_image').hide(); //hide loading image once data is received
+				$("#webArticlesHtml").contents().find("#results").empty();
+				$("#webArticlesHtml").contents().find("#results").append(data);
 			});
 	   
     }
@@ -1669,9 +1666,8 @@ $(document).ready(function () {
 				$("#webAudiosHtml").contents().find("#results").append(data);
 				
 			}).fail(function(xhr, ajaxOptions, thrownError) { 
-				alert(thrownError); //alert any HTTP error
-				$(".load_more").show(); //bring back load more button
-				$('.animation_image').hide(); //hide loading image once data is received
+				$("#webAudiosHtml").contents().find("#results").empty();
+				$("#webAudiosHtml").contents().find("#results").append(data);
 			});
 	   
     }
