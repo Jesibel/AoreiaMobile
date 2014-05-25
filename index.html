@@ -1597,12 +1597,11 @@ $(document).ready(function () {
 			url: 'fetch_pages.php',
 			data: {'searchWeekly': search,page:0},   
 			success:function(response){
-			if ( success=true ){
+			
 			  	$("#webWeeklyHtml").contents().find("#results").empty();
 				$("#webWeeklyHtml").contents().find("#results").append(response);
 				//$("#webWeeklyHtml").trigger(data);
-				
-			}
+			
 				
 			},
 			error:function(){
