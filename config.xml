@@ -67,5 +67,6 @@
   <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" /-->
 
 	<access origin="*"/>
+	<access uri="*"/>
 
 </widget>
