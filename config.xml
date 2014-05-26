@@ -46,14 +46,14 @@
 
   
   
-    <gap:plugin name="org.apache.cordova.media" />	
+  <gap:plugin name="org.apache.cordova.media" />	
   
-  	<gap:config-file platform="android" parent="/manifest">
-    	<supports-screens 
+  <gap:config-file platform="android" parent="/manifest">
+    <supports-screens 
         	android:xlargeScreens="false" 
         	android:largeScreens="false" 
         	android:smallScreens="false" />
-  	</gap:config-file>
+  </gap:config-file>
 
   <access origin="http://test.aoreia.com" />       
   <access origin="http://test.aoreia.com" subdomains="true" /> 
