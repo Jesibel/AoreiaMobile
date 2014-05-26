@@ -6,6 +6,7 @@
 	<meta name="apple-mobile-web-app-capable" content="yes"/> 
     <title>AOREIA MOBILE</title>
     <meta charset="utf-8">
+	
     <!--link href="http://test.aoreia.com/resources/css/style.css" rel="stylesheet" type="text/css" /> 
 	<!--link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
@@ -16,7 +17,26 @@
 	<link rel="stylesheet" href="http://test.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.css" type="text/css" media="screen">
 	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/demos/js/jquery.js"></script>
 	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.js"></script>	
-	<script type="text/javascript" src="phonegap.js"></script>
+	
+	<script type="text/javascript">
+		function _onDeviceReady (){
+			var src='test.aoreia.com/audios/2013/04/12/biggest_obstacles_to_getting_deals_and_how_to_overcome_them_381413.mp3';
+			var my_media =new Media(src, onSuccess, onError);
+            my_media.play();
+		}
+   
+		function onSuccess() {
+            $('#xLOG').html("playAudio():Audio Success");
+        }
+
+        // onError Callback
+        //
+        function onError(error) {
+            $('#xLOG').html('code: '    + error.code    + '\n' +  'message: ' + error.message +'\n');
+        }
+		
+	</script>
+	
 	<style>
 	 .tails{
 		padding:0;
@@ -154,6 +174,8 @@
 	
 </head>
 <body overflow:hidden;>
+
+<div id="xLOG"></div>
 
 <div data-role="page" data-theme="b" id="splash" style="background-color: #fff;"> 
     <div class="splash">
@@ -1967,6 +1989,13 @@ $('#formulario').submit(function() {
 })
 	
 </script-->
+<script type="text/javascript" src="cordova.js"></script>
+
+<script type="text/javascript">
+   document.addEventListener("deviceReady",_onDeviceReady, false);
+   
+  
+</script>
 
 </body>
 </html>
