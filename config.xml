@@ -44,7 +44,9 @@
   <gap:splash src="resources/image/logo_aoreia_1024.png"       gap:platform="android" gap:qualifier="port-xhdpi" />
 
 
-	
+	<gap:plugin name="org.apache.cordova.media" />	
+  
+  
 
   <access origin="http://test.aoreia.com" />       
   <access origin="http://test.aoreia.com" subdomains="true" /> 
