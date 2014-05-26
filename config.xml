@@ -34,7 +34,7 @@
  
 
   <gap:plugin name="com.rjfun.cordova.plugin.lowlatencyaudio"/> 
-  <gap:plugin name="org.apache.cordova.file-transfer" version="1.0.0" />
+  <gap:plugin name="org.apache.cordova.file-transfer" />  
   <!-- Define app icon for each platform. -->
   <icon src="resources/image/icon.png" />
   <icon src="resources/image/logo36.png"   gap:platform="android"    gap:density="ldpi" />
