@@ -43,15 +43,21 @@
   <gap:splash src="resources/image/logo_aoreia_960.png"        gap:platform="android" gap:qualifier="port-hdpi" />
   <gap:splash src="resources/image/logo_aoreia_1024.png"       gap:platform="android" gap:qualifier="port-xhdpi" />
 
-
-  <gap:plugin name="org.apache.cordova.media" version="0.2.8" />	
+<!-- android -->
+    <platform name="android">
+	<gap:plugin name="org.apache.cordova.media" />	
   
-  <gap:config-file platform="android" parent="/manifest">
-    <supports-screens 
-        android:xlargeScreens="false" 
-        android:largeScreens="false" 
-        android:smallScreens="false" />
-  </gap:config-file>
+  	<gap:config-file platform="android" parent="/manifest">
+    	<supports-screens 
+        	android:xlargeScreens="false" 
+        	android:largeScreens="false" 
+        	android:smallScreens="false" />
+  	</gap:config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        </config-file>
+</platform>
 
   <access origin="http://test.aoreia.com" />       
   <access origin="http://test.aoreia.com" subdomains="true" /> 
