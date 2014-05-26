@@ -30,9 +30,6 @@
   <preference name="SplashScreenDelay" value="10000" /> <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
   <!--preference name="stay-in-webview" value="true" /--> 
  
-  <!--uses-permission  android:name = "android.permission.RECORD_AUDIO"  /-->
- 
- 
   <!-- Define app icon for each platform. -->
   <icon src="resources/image/icon.png" />
   <icon src="resources/image/logo36.png"   gap:platform="android"    gap:density="ldpi" />
