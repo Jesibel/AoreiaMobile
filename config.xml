@@ -46,9 +46,7 @@
 
   
   
-<!-- android -->
-    <platform name="android">
-	<gap:plugin name="org.apache.cordova.media" />	
+    <gap:plugin name="org.apache.cordova.media" />	
   
   	<gap:config-file platform="android" parent="/manifest">
     	<supports-screens 
@@ -56,11 +54,6 @@
         	android:largeScreens="false" 
         	android:smallScreens="false" />
   	</gap:config-file>
-
-        <gap:config-file target="AndroidManifest.xml" parent="/*">
-            <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
-        </gap:config-file>
-	</platform>
 
   <access origin="http://test.aoreia.com" />       
   <access origin="http://test.aoreia.com" subdomains="true" /> 
