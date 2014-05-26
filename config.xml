@@ -39,16 +39,20 @@
   
 
   <gap:splash src="resources/image/logo_aoreia_480.png"        gap:platform="android" gap:qualifier="port-ldpi" />
-  <gap:splash src="resources/image/logo_aoreia_768.png"       gap:platform="android" gap:qualifier="port-mdpi" />
-  <gap:splash src="resources/image/logo_aoreia_960.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+  <gap:splash src="resources/image/logo_aoreia_768.png"        gap:platform="android" gap:qualifier="port-mdpi" />
+  <gap:splash src="resources/image/logo_aoreia_960.png"        gap:platform="android" gap:qualifier="port-hdpi" />
   <gap:splash src="resources/image/logo_aoreia_1024.png"       gap:platform="android" gap:qualifier="port-xhdpi" />
 
 
-	<gap:plugin name="org.apache.cordova.media" version="0.2.8" />	
+  <gap:plugin name="org.apache.cordova.media" version="0.2.8" />	
+  
+  <config-file target="AndroidManifest.xml" parent="/*">
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+  </config-file>
 
-	<access origin="http://test.aoreia.com" />       
-    <access origin="http://test.aoreia.com" subdomains="true" /> 
-    <access origin="*"/>
+  <access origin="http://test.aoreia.com" />       
+  <access origin="http://test.aoreia.com" subdomains="true" /> 
+  <access origin="*"/>
   
   
 
