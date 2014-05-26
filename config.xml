@@ -44,9 +44,7 @@
   <gap:splash src="resources/image/logo_aoreia_1024.png"       gap:platform="android" gap:qualifier="port-xhdpi" />
 
 
-	<feature name="Media">
-		<param name="android-package" value="org.apache.cordova.media.AudioHandler" />
-	</feature>	
+	<gap:plugin name="org.apache.cordova.media" version="0.2.8" />	
 
 	<access origin="http://test.aoreia.com" />       
     <access origin="http://test.aoreia.com" subdomains="true" /> 
