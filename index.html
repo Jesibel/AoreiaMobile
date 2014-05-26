@@ -20,10 +20,11 @@
 	
 	<script type="text/javascript">
 		function _onDeviceReady (){
-			var src='test.aoreia.com/audios/2013/04/12/biggest_obstacles_to_getting_deals_and_how_to_overcome_them_381413.mp3';
+			var src='http://test.aoreia.com/audios/2013/04/12/biggest_obstacles_to_getting_deals_and_how_to_overcome_them_381413.mp3';
 			var my_media =new Media(src, onSuccess, onError);
             my_media.play();
 		}
+   
    
 		function onSuccess() {
             $('#xLOG').html("playAudio():Audio Success");
