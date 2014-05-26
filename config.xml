@@ -34,7 +34,7 @@
  
 
   <gap:plugin name="com.rjfun.cordova.plugin.lowlatencyaudio"/> 
- 
+  <gap:plugin name="org.apache.cordova.file-transfer" version="1.0.0" />
   <!-- Define app icon for each platform. -->
   <icon src="resources/image/icon.png" />
   <icon src="resources/image/logo36.png"   gap:platform="android"    gap:density="ldpi" />
@@ -66,12 +66,22 @@
   <gap:splash src="res/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"     width="1024" height="768" />
   <gap:splash src="res/screen/windows-phone/screen-portrait.jpg"      gap:platform="winphone" /-->
 
-  <feature name="http://api.phonegap.com/1.0/file"/>
-  <feature name="http://api.phonegap.com/1.0/media"/> - See more at: http://www.phonegapspain.com/topic/problema-con-audio/#sthash.YRXS9aaj.dpuf
-  
-  <access origin="http://test.aoreia.com" />       
-  <access origin="http://test.aoreia.com" subdomains="true" /> 
-  <access origin="*"/>
+    <feature name="http://api.phonegap.com/1.0/battery"/>
+    <feature name="http://api.phonegap.com/1.0/camera"/>
+    <feature name="http://api.phonegap.com/1.0/contacts"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/media"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/>
+    <feature name="http://api.phonegap.com/1.0/file"/>
+    <feature name="http://api.phonegap.com/1.0/geolocation"/>
+    <feature name="http://api.phonegap.com/1.0/network"/>
+    <feature name="http://api.phonegap.com/1.0/notification"/> 
+
+	<access origin="http://test.aoreia.com" />       
+    <access origin="http://test.aoreia.com" subdomains="true" /> 
+    <access origin="*"/>
   
   
   <!--access origin="http://aoreia.com" subdomains="true" /-->
