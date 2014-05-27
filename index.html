@@ -1613,14 +1613,12 @@ $(document).ready(function () {
 	
 	$("#searchWeekly").on("keypress", function(e){               
     if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
+	 var search = $("input#searchWeekly").val();
         alert("The enter key was pressed");
+		alert(search);
 		
-		$.ajax({			
-			beforeSend : function ( jqXHR , settings ){ 
-                 jqXHR . setRequestHeader ( 'X-Requested-With' ,  'XMLHttpRequest' ); 
-                  }, 
-            type: 'POST',
-			
+		$.ajax({						 
+            type: 'POST',			
 			url: 'fetch_pages.php',
 			data: {'searchWeekly': search,page:0},   
             crossDomain : false , 
@@ -1628,9 +1626,7 @@ $(document).ready(function () {
 			 alert('Works!');
 			  	$("#webWeeklyHtml").contents().find("#results").empty();
 				$("#webWeeklyHtml").contents().find("#results").append(data);
-				//$("#webWeeklyHtml").trigger(data);
-			
-				
+				//$("#webWeeklyHtml").trigger(data);							
 			},
 			error:function(){
 								
