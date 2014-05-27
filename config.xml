@@ -51,7 +51,7 @@
 
   <gap:plugin name="org.apache.cordova.media" />	
   
-  <uses-permission android:name="android.permission.INTERNET" />
+
 
   <access origin="http://test.aoreia.com" />       
   <access origin="http://test.aoreia.com" subdomains="true" /> 
