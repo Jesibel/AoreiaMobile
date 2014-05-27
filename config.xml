@@ -16,7 +16,8 @@
   <author href="http://test.aoreia.com" email="jesibelaranguren@gmail.com">
   Hardeep Shoker 
   </author>
-  <feature name="http://api.phonegap.com/1.0/network"/>
+  
+   <feature name="http://api.phonegap.com/1.0/network"/>
    <feature name="http://api.phonegap.com/1.0/media"/>
    <feature name="http://api.phonegap.com/1.0/file"/>
    <feature name="http://api.phonegap.com/1.0/notification"/>
@@ -48,9 +49,9 @@
   <gap:splash src="resources/image/logo_aoreia_1024.png"       gap:platform="android" gap:qualifier="port-xhdpi" />
 
 
-   <gap:plugin name="org.apache.cordova.media" />	
+  <gap:plugin name="org.apache.cordova.media" />	
   
-  
+  <uses-permission android:name="android.permission.INTERNET" />
 
   <access origin="http://test.aoreia.com" />       
   <access origin="http://test.aoreia.com" subdomains="true" /> 

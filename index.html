@@ -1615,15 +1615,15 @@ $(document).ready(function () {
     if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
         alert("The enter key was pressed");
 		
-		/*$.ajax({
+		$.ajax({
 			type: 'POST',
-			dataType: "json",
+			//dataType: "json",
 			url: 'fetch_pages.php',
 			data: {'searchWeekly': search,page:0},   
-			success:function(response){
+			success:function(data){
 			 alert('Works!');
-			  	//$("#webWeeklyHtml").contents().find("#results").empty();
-				//$("#webWeeklyHtml").contents().find("#results").append(response);
+			  	$("#webWeeklyHtml").contents().find("#results").empty();
+				$("#webWeeklyHtml").contents().find("#results").append(data);
 				//$("#webWeeklyHtml").trigger(data);
 			
 				
@@ -1631,9 +1631,9 @@ $(document).ready(function () {
 			error:function(){
 								
 			}
-		});*/
+		});
 		
-		$.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
+		/*$.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
 				alert('Works!');
 				$("#webWeeklyHtml").contents().find("#results").empty();
 				$("#webWeeklyHtml").contents().find("#results").append(data);
@@ -1645,7 +1645,7 @@ $(document).ready(function () {
 			consola.log (ajaxOptions);
 			$(".load_more").show(); //bring back load more button
 			$('.animation_image').hide(); //hide loading image once data is received
-		});
+		});*/
 		
        //e.preventDefault();
 	   
