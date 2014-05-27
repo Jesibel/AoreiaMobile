@@ -1615,11 +1615,15 @@ $(document).ready(function () {
     if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
         alert("The enter key was pressed");
 		
-		$.ajax({
-			type: 'POST',
-			//dataType: "json",
+		$.ajax({			
+			beforeSend : function ( jqXHR , settings ){ 
+                 jqXHR . setRequestHeader ( 'X-Requested-With' ,  'XMLHttpRequest' ); 
+                  }, 
+            type: 'POST',
+			
 			url: 'fetch_pages.php',
 			data: {'searchWeekly': search,page:0},   
+            crossDomain : false , 
 			success:function(data){
 			 alert('Works!');
 			  	$("#webWeeklyHtml").contents().find("#results").empty();
