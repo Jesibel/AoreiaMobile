@@ -1612,26 +1612,27 @@ $(document).ready(function () {
 	}
 	
 	$("#searchWeekly").on("keypress", function(e){               
-    if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
-	 var search = $("input#searchWeekly").val();
-        alert("The enter key was pressed");
-		alert(search);
+		if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
+			var search = $("input#searchWeekly").val();
+				alert("The enter key was pressed");
+				alert(search);
 		
-		$.ajax({						 
-            type: 'POST',			
-			url: 'fetch_pages.php',
-			data: {'searchWeekly': search,page:0},   
-            crossDomain : false , 
-			success:function(data){
-			 alert('Works!');
-			  	$("#webWeeklyHtml").contents().find("#results").empty();
-				$("#webWeeklyHtml").contents().find("#results").append(data);
-				//$("#webWeeklyHtml").trigger(data);							
-			},
-			error:function(){
-								
-			}
-		});
+			$.ajax({						 
+				type: 'POST',			
+				url: 'fetch_pages.php',
+				data: {'searchWeekly': search,page:0},   
+				//crossDomain : false , 
+				success:function(data){
+				 alert('Works!');
+					$("#webWeeklyHtml").contents().find("#results").empty();
+					$("#webWeeklyHtml").contents().find("#results").append(data);
+					//$("#webWeeklyHtml").trigger(data);							
+				},
+				error:function(exception){
+				alert('Not work');
+									
+				}
+		    });
 		
 		/*$.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
 				alert('Works!');
