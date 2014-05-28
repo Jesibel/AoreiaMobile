@@ -1595,10 +1595,37 @@ $(document).ready(function () {
 	
 	
 	$("#searchWeekly").on("keypress", function(e){               
+		
+		if ($(".searchInicio:focus")&& (e.keyCode === 13)) {
+	  
+			var searchI = $("input#searchInicio").val();
+			//alert(search);
+			$.post('http://test.aoreia.com/fetch_pagesGeneral.php' ,{'searchInicio': searchI,page:0}, function(data) {
+				if(searchI!=""){
+					//alert(searchI);
+					$.mobile.changePage("#generalHtml");
+					$("#webGeneralHtml").contents().find("#results").empty();
+					$("#webGeneralHtml").contents().find("#results").append(data);
+					$("input#searchInicio").val('');
+				}else{				
+					$("#webGeneralHtml").contents().find("#results").empty();
+					$("#webGeneralHtml").contents().find("#results").append(data);
+					$("input#searchInicio").val('');
+				}
+					
+				}).fail(function(xhr, ajaxOptions, thrownError) { 
+					alert(thrownError); //alert any HTTP error
+					$(".load_more").show(); //bring back load more button
+					$('.animation_image').hide(); //hide loading image once data is received
+				});
+	   
+		}
+		
+		
 		if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
 			var search = $("input#searchWeekly").val();
-				alert("The enter key was pressed");
-				alert(search);
+				//alert("The enter key was pressed");
+				//alert(search);
 		
 			$.ajax({						 
 				type: 'POST',			
@@ -1606,7 +1633,7 @@ $(document).ready(function () {
 				data: {'searchWeekly': search,page:0},   
 				//crossDomain : false , 
 				success:function(data){
-				 alert('Works!');
+				 //alert('Works!');
 					$("#webWeeklyHtml").contents().find("#results").empty();
 					$("#webWeeklyHtml").contents().find("#results").append(data);
 					//$("#webWeeklyHtml").trigger(data);							
@@ -1634,34 +1661,11 @@ $(document).ready(function () {
        //e.preventDefault();
 	   
     }
-	});
-	
-	/*if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
-	   var search = $("input#searchWeekly").val();
-	   
-       //alert(search);
-	    $.post('fetch_pages.php',{'searchWeekly': search,page:0}, function(data) {
-			
-				$("#webWeeklyHtml").contents().find("#results").empty();
-				$("#webWeeklyHtml").contents().find("#results").append(data);
-				
-		}).fail(function(xhr, ajaxOptions, thrownError) {
-			alert(data);
-				consola.log (thrownError);//alert any HTTP error
-				consola.log (xhr);
-				consola.log (ajaxOptions);
-				$(".load_more").show(); //bring back load more button
-				$('.animation_image').hide(); //hide loading image once data is received
-		});
-	   
-	   
-    }
-	
-    if ($(".searchTest:focus") && (e.keyCode === 13)) {
+	 if ($(".searchTest:focus") && (e.keyCode === 13)) {
 	   var search = $("input#searchTest").val();
 	   
        //alert(search);
-	   $.post('fetch_pagesTest.php',{'searchTest': search,page:0}, function(data) {
+	   $.post('http://test.aoreia.com/fetch_pagesTest.php',{'searchTest': search,page:0}, function(data) {
 			
 				$("#webTestimonialsHtml").contents().find("#results").empty();
 				$("#webTestimonialsHtml").contents().find("#results").append(data);
@@ -1679,7 +1683,7 @@ $(document).ready(function () {
 	   var search = $("input#searchFaq").val();
 	   
        //alert(search);
-	   $.post('fetch_pagesFaq.php',{'searchFaq': search,page:0}, function(data) {
+	   $.post('http://test.aoreia.com/fetch_pagesFaq.php',{'searchFaq': search,page:0}, function(data) {
 			
 				$("#webFaqHtml").contents().find("#results").empty();
 				$("#webFaqHtml").contents().find("#results").append(data);
@@ -1696,7 +1700,7 @@ $(document).ready(function () {
 	   var search = $("input#searchArt").val();
 	   
        //alert(search);
-	   $.post('fetch_pagesArt.php',{'searchArt': search,page:0}, function(data) {
+	   $.post('http://test.aoreia.com/fetch_pagesArt.php',{'searchArt': search,page:0}, function(data) {
 			
 				$("#webArticlesHtml").contents().find("#results").empty();
 				$("#webArticlesHtml").contents().find("#results").append(data);
@@ -1713,7 +1717,7 @@ $(document).ready(function () {
 	   var search = $("input#searchAudios").val();
 	   
        //alert(search);
-	   $.post('fetch_pagesAudios.php',{'searchAudios': search,page:0}, function(data) {
+	   $.post('http://test.aoreia.com/fetch_pagesAudios.php',{'searchAudios': search,page:0}, function(data) {
 			
 				$("#webAudiosHtml").contents().find("#results").empty();
 				$("#webAudiosHtml").contents().find("#results").append(data);
@@ -1724,7 +1728,13 @@ $(document).ready(function () {
 				$('.animation_image').hide(); //hide loading image once data is received
 			});
 	   
-    }*/
+    }
+	
+	
+	});
+	
+		
+   
 	
 
 	
