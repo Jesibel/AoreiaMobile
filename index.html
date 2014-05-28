@@ -1592,24 +1592,7 @@
     }
 	
 $(document).ready(function () {
-		
 	
-	function showConfirm() {
-        navigator.notification.confirm(
-            'Do you really want to exit?',  // message
-            exitFromApp,              // callback to invoke with index of button pressed
-            'Exit',            // title
-            'Cancel,OK'         // buttonLabels
-        );
-    }
- 
-    document.addEventListener("backvideo", backKeyDown, true); 
-
-
-	function backKeyDown() { 
-		// Call my back key code here.
-		$.mobile.changePage("#videosHtml", "slideup");
-	}
 	
 	$("#searchWeekly").on("keypress", function(e){               
 		if ($(".searchWeekly:focus") && (e.keyCode === 13)) {
@@ -1619,7 +1602,7 @@ $(document).ready(function () {
 		
 			$.ajax({						 
 				type: 'POST',			
-				url: 'fetch_pages.php',
+				url: 'http://test.aoreia.com/fetch_pages.php',
 				data: {'searchWeekly': search,page:0},   
 				//crossDomain : false , 
 				success:function(data){
