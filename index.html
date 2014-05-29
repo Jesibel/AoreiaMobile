@@ -1600,7 +1600,7 @@ $(document).ready(function () {
 	  alert("The enter key was pressed");
 			var searchI = $("input#searchInicio").val();
 			alert(searchI);
-			$.post('http://test.aoreia.com/fetch_pagesGeneral.php' ,{'searchInicio': searchI,page:0}, function(data) {
+			$.post('http://test.aoreia.com/fetch_pagesGeneral.php',{'searchInicio': searchI,page:0}, function(data) {
 				if(searchI!=""){
 					alert(searchI);
 					alert('aqui');
