@@ -1599,7 +1599,7 @@ $(document).ready(function () {
 	if ($(".searchInicio:focus")&& (e.keyCode === 13)) {
 	  alert("The enter key was pressed");
 			var searchI = $("input#searchInicio").val();
-			alert(search);
+			alert(searchI);
 			$.post('http://test.aoreia.com/fetch_pagesGeneral.php' ,{'searchInicio': searchI,page:0}, function(data) {
 				if(searchI!=""){
 					alert(searchI);
