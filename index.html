@@ -1610,6 +1610,7 @@ $(document).ready(function () {
 			$.post('http://test.aoreia.com/fetch_pagesGeneral.php' ,{'searchInicio': searchI,page:0}, function(data) {
 				if(searchI!=""){
 					alert('aqui'searchI);
+					
 					$.mobile.changePage("#generalHtml");
 					$("#webGeneralHtml").contents().find("#results").empty();
 					$("#webGeneralHtml").contents().find("#results").append(data);
