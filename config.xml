@@ -50,7 +50,7 @@
 
 
   <gap:plugin name="org.apache.cordova.media" />	
-  <gap:plugin name="net.yoik.cordova.plugins.screenorientation"/>
+  <gap:plugin name="org.apache.cordova.device-orientation" />
   
 
 
