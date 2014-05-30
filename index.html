@@ -1610,7 +1610,7 @@ $(document).ready(function () {
 			
 		
 	
-	$(document).on("pagecontainerhide", function (e, ui) {
+	$(document).on("content", function (e, ui) {
         if  (ui.nextPage[0].id=='webVideosHtml'){
             var video = $('#webVideosHtml').contents().find('#video')
 		video.addEventListener('playing', function() {                              
