@@ -20,22 +20,25 @@
 	
 	<script type="text/javascript">
 		function _onDeviceReady (){
-			
 			$("#video_full").on("click", function(){
-			if (video.webkitEnterFullScreen)
-				video.webkitEnterFullScreen();
-			else if (video.webkitRequestFullScreen)
-				video.webkitRequestFullScreen();
-			else if (video.requestFullscreen)
-				video.requestFullscreen();
+				if (video.webkitEnterFullScreen)
+					video.webkitEnterFullScreen();
+				else if (video.webkitRequestFullScreen)
+					video.webkitRequestFullScreen();
+				else if (video.requestFullscreen)
+					video.requestFullscreen();
 			}, false);
        
-			jQuery(document).on('webkitfullscreenchange', function(e) {       
-				if(!e.currentTarget.webkitIsFullScreen) {
+
+ 
+		jQuery(document).on('webkitfullscreenchange', function(e) {       
+			if(!e.currentTarget.webkitIsFullScreen) {
 				window.plugins.orientationchanger.resetOrientation();
 			}
-			});
-        }
+		});
+		
+		}
+   
 		/*function onSuccess() {
             $('#xLOG').html("playAudio():Audio Success");
         }*/
@@ -1599,6 +1602,24 @@
 	
 $(document).ready(function () {
 
+	var video = $('#webVideosHtml').contents().find('#video')
+				
+		video.addEventListener('playing', function() {
+				window.plugins.orientationchanger.lockOrientation('landscape');
+		}, false);
+			
+		
+	
+	$(document).on("pagecontainerhide", function (e, ui) {
+        if  (ui.nextPage[0].id=='webVideosHtml'){
+            var video = $('#webVideosHtml').contents().find('#video')
+		video.addEventListener('playing', function() {                              
+			window.plugins.orientationchanger.lockOrientation('landscape');
+		}, false);
+      $("#video_full")[0].click();
+     }
+});
+	
 	$("#searchInicio").on("keypress", function(e){       
 	
 	if ($(".searchInicio:focus")&& (e.keyCode === 13)) {
