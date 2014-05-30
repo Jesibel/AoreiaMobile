@@ -1594,6 +1594,29 @@
     }
 	
 $(document).ready(function () {
+
+	var video = document.getElementById("video");
+				
+		video.addEventListener('playing', function() {
+				window.plugins.orientationchanger.lockOrientation('landscape');
+		}, false);
+			
+		$("#video_full").on("click", function(){
+			if (video.webkitEnterFullScreen)
+				video.webkitEnterFullScreen();
+			else if (video.webkitRequestFullScreen)
+				video.webkitRequestFullScreen();
+			else if (video.requestFullscreen)
+				video.requestFullscreen();
+         }, false);
+							
+	$("#video_full")[0].click();
+	
+	jQuery(document).on('webkitfullscreenchange', function(e) {       
+				if(!e.currentTarget.webkitIsFullScreen) {
+					window.plugins.orientationchanger.resetOrientation();
+				}
+	});
 	
 	$("#searchInicio").on("keypress", function(e){       
 	
@@ -2102,6 +2125,8 @@ $(document).ready(function () {
 		
        
 });
+
+
 	
 </script>
 	
