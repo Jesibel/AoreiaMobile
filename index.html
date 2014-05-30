@@ -18,25 +18,29 @@
 	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/demos/js/jquery.js"></script>
 	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.js"></script>	
 	
-	<!--script type="text/javascript">
+	<script type="text/javascript">
 		function _onDeviceReady (){
-			var src='http://test.aoreia.com/audios/2013/04/12/audio1.mp3';
-			var my_media =new Media(src, onSuccess, onError);
-            my_media.play();
-		}
-   
-   
-		function onSuccess() {
+			
+			$("#video_full").on("click", function(){
+			if (video.webkitEnterFullScreen)
+				video.webkitEnterFullScreen();
+			else if (video.webkitRequestFullScreen)
+				video.webkitRequestFullScreen();
+			else if (video.requestFullscreen)
+				video.requestFullscreen();
+			}, false);
+       
+			jQuery(document).on('webkitfullscreenchange', function(e) {       
+				if(!e.currentTarget.webkitIsFullScreen) {
+				window.plugins.orientationchanger.resetOrientation();
+			}
+			}
+        }
+		/*function onSuccess() {
             $('#xLOG').html("playAudio():Audio Success");
-        }
+        }*/
 
-        // onError Callback
-        //
-        function onError(error) {
-            $('#xLOG').html('code: '    + error.code    + '\n' +  'message: ' + error.message +'\n');
-        }
-		
-	</script-->
+	</script>
 	
 	<style>
 	 .tails{
@@ -1595,29 +1599,6 @@
 	
 $(document).ready(function () {
 
-	var video = document.getElementById("video");
-				
-		video.addEventListener('playing', function() {
-				window.plugins.orientationchanger.lockOrientation('landscape');
-		}, false);
-			
-		$("#video_full").on("click", function(){
-			if (video.webkitEnterFullScreen)
-				video.webkitEnterFullScreen();
-			else if (video.webkitRequestFullScreen)
-				video.webkitRequestFullScreen();
-			else if (video.requestFullscreen)
-				video.requestFullscreen();
-         }, false);
-							
-	$("#video_full")[0].click();
-	
-	jQuery(document).on('webkitfullscreenchange', function(e) {       
-				if(!e.currentTarget.webkitIsFullScreen) {
-					window.plugins.orientationchanger.resetOrientation();
-				}
-	});
-	
 	$("#searchInicio").on("keypress", function(e){       
 	
 	if ($(".searchInicio:focus")&& (e.keyCode === 13)) {
@@ -2164,11 +2145,9 @@ $('#formulario').submit(function() {
 </script-->
 <script type="text/javascript" src="cordova.js"></script>
 
-<!--script type="text/javascript">
+<script type="text/javascript">
    document.addEventListener("deviceReady",_onDeviceReady, false);
-   
-  
-</script-->
+</script>
 
 </body>
 </html>
