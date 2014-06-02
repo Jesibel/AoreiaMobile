@@ -22,9 +22,8 @@
 		var video_play=false;
 		
 		function _onDeviceReady (){	
-			window.addEventListener("message", function(event) {
 			
-				 $(window).on("navigate", function (event, data) {
+			$(window).on("navigate", function (event, data) {
 					var direction = data.state.direction;
 					if (direction == 'back') {
 
@@ -35,6 +34,8 @@
 
 					}
 				});	
+		
+			window.addEventListener("message", function(event) {							 
 			
 				if (event.data == "video") {
 					video_play=true;
