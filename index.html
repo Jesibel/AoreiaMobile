@@ -20,7 +20,11 @@
 	
 	<script type="text/javascript">
 		function _onDeviceReady (){	
-			return true;
+			window.addEventListener("message", function(event) {
+				if (event.data == "video") {
+					window.plugins.orientationchanger.lockOrientation('landscape');
+				}
+			}, false);
         }
 	</script>
 	
