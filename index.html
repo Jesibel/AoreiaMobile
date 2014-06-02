@@ -19,6 +19,15 @@
 	<script type="text/javascript" src="http://test.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.js"></script>	
 	
 	<script type="text/javascript">
+		var video_play=false;
+		if (event.data == "video") {
+			video_play=true;
+		}
+		
+		if (event.data == "reset") {
+           window.plugins.orientationchanger.resetOrientation();
+        }
+	
 		function _onDeviceReady (){	
 			window.addEventListener("message", function(event) {
 				if (event.data == "video") {
@@ -2150,7 +2159,14 @@ $('#formulario').submit(function() {
 <script type="text/javascript" src="cordova.js"></script>
 
 <script type="text/javascript">
-   document.addEventListener("deviceReady",_onDeviceReady, false);
+    document.addEventListener("deviceReady",_onDeviceReady, false);
+   
+    document.addEventListener("backbutton", function(){
+		if(video_play){
+			window.plugins.orientationchanger.resetOrientation();
+			video_play=false;
+		}
+   }, false);
 </script>
 
 </body>
