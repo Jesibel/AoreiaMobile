@@ -24,14 +24,15 @@
 			video_play=true;
 		}
 		
-		if (event.data == "reset") {
-           window.plugins.orientationchanger.resetOrientation();
-        }
+		
 	
 		function _onDeviceReady (){	
 			window.addEventListener("message", function(event) {
 				if (event.data == "video") {
 					window.plugins.orientationchanger.lockOrientation('landscape');
+				}
+				if (event.data == "reset") {
+					window.plugins.orientationchanger.resetOrientation();
 				}
 			}, false);
         }
