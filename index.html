@@ -23,6 +23,19 @@
 		
 		function _onDeviceReady (){	
 			window.addEventListener("message", function(event) {
+			
+				 $(window).on("navigate", function (event, data) {
+					var direction = data.state.direction;
+					if (direction == 'back') {
+
+						if(video_play){
+							window.plugins.orientationchanger.resetOrientation();
+							video_play=false;
+						}
+
+					}
+				});	
+			
 				if (event.data == "video") {
 					video_play=true;
 					window.plugins.orientationchanger.lockOrientation('landscape');
