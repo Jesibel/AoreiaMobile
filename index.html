@@ -25,7 +25,7 @@
 			
 			$(document).on("pagecontainerhide", function (e, ui) {
 				if(video_play){
-					window.plugins.orientationchanger.resetOrientation();
+					window.plugins.orientationchanger.lockOrientation('portrait');
 					video_play=false;
 				}
 			});
@@ -39,7 +39,9 @@
 					window.plugins.orientationchanger.lockOrientation('landscape');
 				}
 				if (event.data == "reset") {
-					window.plugins.orientationchanger.resetOrientation();
+					//window.plugins.orientationchanger.resetOrientation();
+					window.plugins.orientationchanger.lockOrientation('portrait');
+					
 				}
 			}, false);
         }
