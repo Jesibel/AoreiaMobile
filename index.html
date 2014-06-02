@@ -23,17 +23,14 @@
 		
 		function _onDeviceReady (){	
 			
-			$(window).on("navigate", function (event, data) {
-					var direction = data.state.direction;
-					if (direction == 'back') {
+			$(document).on("pagecontainerhide", function (e, ui) {
+				if(video_play){
+					window.plugins.orientationchanger.resetOrientation();
+					video_play=false;
+				}
+			});
 
-						if(video_play){
-							window.plugins.orientationchanger.resetOrientation();
-							video_play=false;
-						}
-
-					}
-				});	
+			
 		
 			window.addEventListener("message", function(event) {							 
 			
@@ -2177,6 +2174,7 @@ $('#formulario').submit(function() {
 			window.plugins.orientationchanger.resetOrientation();
 			video_play=false;
 		}
+		 history.back();
    }, false);
 </script>
 
