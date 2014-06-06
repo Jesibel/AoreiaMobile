@@ -43,6 +43,10 @@
 					window.plugins.orientationchanger.lockOrientation('portrait');
 					
 				}
+				if (event.data.msg == "pdf") {
+					window.open(event.data.url, 'location=yes');
+					console.log('abriendo pdf..');
+				}
 			}, false);
         }
 	</script>
