@@ -33,7 +33,8 @@
 			
 		
 			window.addEventListener("message", function(event) {							 
-			
+			    $('#debug').html('<h5>'+event.data+'</h5>');
+				
 				if (event.data == "video") {
 					video_play=true;
 					window.plugins.orientationchanger.lockOrientation('landscape');
@@ -188,6 +189,7 @@
 	
 </head>
 <body overflow:hidden;>
+<div id="debug" > </div>
 
 <div id="xLOG"></div>
 
