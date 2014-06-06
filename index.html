@@ -46,7 +46,7 @@
 				}
 				var pmsg = JSON.parse(event.data);
 				if (pmsg && pmsg.msg=='pdf' ) {
-					window.open(pmsg.url, '_blank', 'location=yes');
+					window.open(pmsg.url, '_system', 'location=yes');
 					console.log('abriendo pdf..');
 				}
 			}, false);
