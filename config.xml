@@ -58,6 +58,8 @@
   
   <gap:plugin name="io.github.pwlin.cordova.plugins.fileopener" version="1.0.1" />
   
+  <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+  
   
   
 

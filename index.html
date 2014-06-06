@@ -33,7 +33,7 @@
 			
 		
 			window.addEventListener("message", function(event) {							 
-			    $('#debug').html('<h5>'+event.data+'</h5>');
+			    navigator.notification.alert('MSG:'+event.data ,function(){});
 				
 				if (event.data == "video") {
 					video_play=true;
