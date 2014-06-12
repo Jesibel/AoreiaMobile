@@ -27,7 +27,6 @@
   <!-- Preferences -->
 
   <!--preference name="orientation" value="landscape"--/>
-  
   <!--preference name="orientation" value="default" /-->
   <preference name="orientation" value="portrait" />
   <preference name="show-splash-screen-spinner" value="false" />
