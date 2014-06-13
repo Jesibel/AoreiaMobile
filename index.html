@@ -174,7 +174,7 @@
 	.nada{display:none;}
 	.desktop{display:none;}
 	.tablet{display:none;}
-	.lef{left:2px;}
+	.lef{left:5px;}
 	.vertical{display:none;}
 	
 }
@@ -2300,6 +2300,7 @@ $(document).ready(function () {
 		$('#searchWeekly').animate({width:'toggle'},1000);
 		$(this).fadeOut();
 		$('#hide1').fadeIn();
+		$.mobile.changePage("#weeklyHtml");
 	});
 	//hide2
 	$('#hide2').click(function(){
