@@ -2597,11 +2597,14 @@ $('#formulario').submit(function() {
 		if(video_play){
 			//window.plugins.orientationchanger.resetOrientation();
 			video_play=false;
-		}else if(activePage=='inicio'){
-			navigator.app.exitApp();//se sale de la aplicacion
 		}else{
 		 history.back();
-		} 
+		}
+
+		if(activePage=='inicio'){
+			navigator.app.exitApp();//se sale de la aplicacion
+		}
+			
    }, false);
 </script>
 
