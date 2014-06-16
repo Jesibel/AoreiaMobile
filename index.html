@@ -2593,9 +2593,7 @@ $('#formulario').submit(function() {
 			//window.plugins.orientationchanger.resetOrientation();
 			video_play=false;
 		}else if($.mobile.activePage.is('#inicio')){
-		e.preventDefault(); //evitar el evento normal del backbutton
-        navigator.app.exitApp();//se sale de la aplicacion
-		
+		 exitApp();//se sale de la aplicacion
 		}else{
 		 history.back();
 		} 
