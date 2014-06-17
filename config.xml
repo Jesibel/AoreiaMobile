@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
  xmlns:gap   = "http://phonegap.com/ns/1.0"
- id          = "com.aoreia.test"
+ id          = "com.aoreia.aoreiamobile"
  versionCode = "10" 
  version     = "1.0.0" >
 
@@ -13,7 +13,7 @@
   An example for phonegap build docs. 
   </description> 
 
-  <author href="http://test.aoreia.com" email="jesibelaranguren@gmail.com">
+  <author href="http://aoreiamobile.aoreia.com" email="jesibelaranguren@gmail.com">
   Hardeep Shoker 
   </author>
   
@@ -63,8 +63,8 @@
   
 
 
-  <access origin="http://test.aoreia.com" />       
-  <access origin="http://test.aoreia.com" subdomains="true" /> 
+  <access origin="http://aoreiamobile.aoreia.com" />       
+  <access origin="http://aoreiamobile.aoreia.com" subdomains="true" /> 
   <access origin="*"/>
   
   
