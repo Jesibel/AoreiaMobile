@@ -54,6 +54,11 @@
 					window.open(pmsg.url, '_system', 'location=yes');
 					console.log('abriendo pdf..');
 				}
+				var store = JSON.parse(event.data);
+				if (store && store.msg=='store' ) {
+					$.mobile.changePage("#storeHtml");
+					console.log('abriendo store..');
+				}
 			}, false);
         }
 	</script>
@@ -2350,6 +2355,13 @@ $(document).ready(function () {
 			//console.debug(window.parent.document.getElementById("webSettingHtml"));
 			//console.debug("window");
 	});
+	
+	$('#nose').bind('click', function (e) {
+			window.parent.document.getElementById("webStoreHtml").contentWindow.storeMobile();
+			//console.debug(window.parent.document.getElementById("webSettingHtml"));
+			//console.debug("window");
+	});
+	
 	
 	
 						
