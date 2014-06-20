@@ -18,6 +18,8 @@
 	<script type="text/javascript" src="http://aoreiamobile.aoreia.com/includes/js/lib/jqueryMobile/demos/js/jquery.js"></script>
 	<script type="text/javascript" src="http://aoreiamobile.aoreia.com/includes/js/lib/jqueryMobile/jquery.mobile-1.4.2.min.js"></script>	
 	
+	<script type='text/javascript' src="//wurfl.io/wurfl.js"></script>
+	
 	<script type="text/javascript">
 		var video_play=false;
 		var activePage;
@@ -32,9 +34,13 @@
 			});
 			
 			
-		$(document).on('pagebeforeshow', function() {
-			activePage = $.mobile.activePage.attr('id');
-		});
+			$(document).on('pagebeforeshow', function() {
+				activePage = $.mobile.activePage.attr('id');
+			});
+			
+			if ( WURFL.form_factor!='Smartphone'  ) {
+				window.plugins.orientationchanger.lockOrientation('landscape');
+			}
 			
 		
 			window.addEventListener("message", function(event) {							 
@@ -191,7 +197,7 @@
 	
 	
 	
-	@media screen and (min-width: 480px) and (orientation: landscape){
+	@media screen and (min-width: 480px) and (orientation: portrait){
 
 	#ui-content { float: none; width: 100%; }
 	#sidebar { float: none; width: 100%; padding: 20px; }
