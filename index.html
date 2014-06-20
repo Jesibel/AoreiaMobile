@@ -38,7 +38,7 @@
 				activePage = $.mobile.activePage.attr('id');
 			});
 			
-			if ( WURFL.form_factor!='Smartphone'  ) {
+			if ( WURFL.is_mobile) {
 				alert('dentro tablet');
 				window.plugins.orientationchanger.lockOrientation('landscape');
 			}
