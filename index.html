@@ -38,8 +38,8 @@
 				activePage = $.mobile.activePage.attr('id');
 			});
 			
-			if ( WURFL.is_mobile) {
-				alert('dentro tablet');
+			if (WURFL.form_factor == "Tablet") {
+				alert('es una tablet');
 				window.plugins.orientationchanger.lockOrientation('landscape');
 			}
 			
