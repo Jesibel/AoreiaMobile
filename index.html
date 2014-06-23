@@ -38,9 +38,9 @@
 				activePage = $.mobile.activePage.attr('id');
 			});
 			
-			//alert(WURFL.form_factor);
+			alert(WURFL.form_factor);
 			if (WURFL.form_factor == "Tablet") {
-				//alert('es una tablet');
+				alert('es una tablet');
 				window.plugins.orientationchanger.lockOrientation('landscape');
 			}
 			
@@ -54,7 +54,9 @@
 				}
 				if (event.data == "reset") {
 					//window.plugins.orientationchanger.resetOrientation();
+					if (WURFL.form_factor != "Tablet") {
 					window.plugins.orientationchanger.lockOrientation('portrait');
+					}
 					
 				}
 				var pmsg = JSON.parse(event.data);
@@ -448,21 +450,21 @@
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#weeklyHtml" data-transition="slide" data-title="AOREIA WEEKLY" role="button">
-								<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/weeklyinsight.png"/>								
+								<img src="http://aoreiamobile.aoreia.com/resources/img/new/weeklyinsight.png"/>								
 								</a>
 							</div>
 						</div>						
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#testimonialsHtml" data-transition="slide" data-title="AOREIA TESTIMONIALS" role="button">
-								<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/testimonials.png"/>						
+								<img src="http://aoreiamobile.aoreia.com/resources/img/new/testimonials.png"/>						
 								</a>
 							</div>
 						</div>
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#faqHtml" data-transition="slide" data-title="AOREIA FAQ" role="button">
-								<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/faq.png"/>								
+								<img src="http://aoreiamobile.aoreia.com/resources/img/new/faq.png"/>								
 								</a>
 							</div>
 						</div>												
@@ -472,7 +474,7 @@
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#storeHtml" role="button">
-								<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/store.png"/>
+								<img src="http://aoreiamobile.aoreia.com/resources/img/new/store.png"/>
 								</a>
 							</div>							
 						</div>						
@@ -486,7 +488,7 @@
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#audiosHtml" data-transition="slide" data-title="AOREIA AUDIOS BOOKS" role="button">
-								<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/audiobooks.png"/>								
+								<img src="http://aoreiamobile.aoreia.com/resources/img/new/audiobooks.png"/>								
 								</a>
 							</div>							
 						</div>												
@@ -495,14 +497,14 @@
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#articlesHtml" data-transition="slide" data-title="AOREIA ARTICLES" role="button">
-								<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/article.png"/>								
+								<img src="http://aoreiamobile.aoreia.com/resources/img/new/article.png"/>								
 								</a>
 							</div>						
 						</div>						
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#filesHtml" data-transition="slide" data-title="AOREIA FILES"  role="button">
-									<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/files.png"/>									
+									<img src="http://aoreiamobile.aoreia.com/resources/img/new/files.png"/>									
 								</a>
 							</div>
 						</div>
@@ -519,21 +521,21 @@
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#meetingsHtml" data-transition="slide" data-title="AOREIA MEETINGS ARCHIVE" role="button">
-									<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/meeting_archives.png"/>									
+									<img src="http://aoreiamobile.aoreia.com/resources/img/new/meeting_archives.png"/>									
 								</a>
 							</div>						
 						</div>						
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="border-radius:none !important;background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#contactUsHtml" data-transition="slide" data-title="AOREIA CONTACT US" role="button">
-								<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/contactus.png"/>
+								<img src="http://aoreiamobile.aoreia.com/resources/img/new/contactus.png"/>
 								</a>
 							</div>
 						</div>
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#aboutUsHtml" data-transition="slide" data-title="AOREIA ABOUT US" role="button">
-									<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/aboutus.png"/>
+									<img src="http://aoreiamobile.aoreia.com/resources/img/new/aboutus.png"/>
 								</a>
 							</div>						
 						</div>												
@@ -550,14 +552,14 @@
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#glossaryHtml" data-transition="slide" data-title="AOREIA GLOSSARY" role="button">
-									<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/glossary.png"/>
+									<img src="http://aoreiamobile.aoreia.com/resources/img/new/glossary.png"/>
 								</a>								
 							</div>
 						</div>
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" href="#sponsorsHtml" data-transition="slide" data-title="AOREIA SPONSORS" role="button">
-									<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new2/sponsors11.png"/>
+									<img src="http://aoreiamobile.aoreia.com/resources/img/new2/sponsors11.png"/>
 								</a>
 							</div>						
 						</div>												
@@ -567,7 +569,7 @@
 						<div class="ui-block-c grid">
 							<div class="ui-bar ui-bar-a tails" style="background-color:#fff;border-color:#fff;">
 								<a class="ui-link ui-btn2 ui-shadow ui-corner-all btn" onclick="window.open('https://www.facebook.com/pages/Americas-Online-REIA-LLC/122993624562827?skip_nax_wizard=true','_system','location=no');" href="#" data-transition="slide" data-title="AOREIA FACEBOOK"  role="button">
-									<img class="nada" src="http://aoreiamobile.aoreia.com/resources/img/new/facebook.png"/>
+									<img src="http://aoreiamobile.aoreia.com/resources/img/new/facebook.png"/>
 								</a>								
 							</div>					
 						</div>						
