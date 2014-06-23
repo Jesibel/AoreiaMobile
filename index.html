@@ -280,7 +280,8 @@
 		
 		/*background-repeat:no-repeat;*/
 		padding:0;
-		height:128px;
+		margin-botton:-5px;
+		
 	}
 	.tablet{display:none;}
 	.desktop{display:none;}
@@ -378,7 +379,7 @@
 		
 		/*background-repeat:no-repeat;*/
 		padding:0;
-		height:128px;
+		margin-botton:-5px;
 	}
 	.tablet{display:none;}
 	.desktop{display:none;}
@@ -2706,7 +2707,9 @@ $('#formulario').submit(function() {
 			//window.plugins.orientationchanger.resetOrientation();
 			video_play=false;
 		}else{
-		 history.back();
+		 if (WURFL.form_factor != "Tablet") {
+			history.back();
+		 }
 		}
 
 		if(activePage=='inicio'){
