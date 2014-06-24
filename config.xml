@@ -84,14 +84,8 @@
   <gap:plugin name="org.apache.cordova.splashscreen" />
   
   <!-- only ios -->
-  <gap:config-file platform="ios" parent="UISupportedInterfaceOrientations~ipad" overwrite="false">
-    <array>
-      <string>UIInterfaceOrientationLandscapeLeft</string>
-      <string>UIInterfaceOrientationLandscapeRight</string>
-    </array>
-  </gap:config-file>
+  <gap:config-file platform="ios" parent="UISupportedInterfaceOrientations~ipad" overwrite="false"></gap:config-file>
   
-
 
   <access origin="http://aoreiamobile.aoreia.com" />       
   <access origin="http://aoreiamobile.aoreia.com" subdomains="true" /> 
