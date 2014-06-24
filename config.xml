@@ -83,7 +83,8 @@
   
   <gap:plugin name="org.apache.cordova.splashscreen" />
   
-  
+  <!-- only ios -->
+  <gap:plugin name="nl.x-services.plugins.ipadlandscapeenabler" version="3.0" />
   
 
 
