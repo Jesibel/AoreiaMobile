@@ -31,9 +31,11 @@
   <preference name="android-minSdkVersion" value="14" />       <!-- JB 4.0 -->
 
   
-  <preference name="AutoHideSplashScreen" value="true" />
+  <preference name="AutoHideSplashScreen"       value="false" />
+  <preference name="FadeSplashScreen"           value="true" />
+  <preference name="FadeSplashScreenDuration"   value="0.5" />
   <preference name="SplashScreen" value="splash" />
-  <preference name="SplashScreenDelay" value="1000" /> <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
+  <preference name="SplashScreenDelay" value="5000" /> <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
   
   <preference name="stay-in-webview" value="true" /> 
  
