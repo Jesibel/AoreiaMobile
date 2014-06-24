@@ -278,7 +278,7 @@
 	
 	.nada{
 
-		margin-bottom:-15px;
+		margin-top:-5px;
 		
 	}
 	.tablet{display:none;}
@@ -375,7 +375,7 @@
 	
 	.nada{
 
-		margin-bottom:-15px;
+		margin-top:-5px;
 	}
 	.tablet{display:none;}
 	.desktop{display:none;}
@@ -2704,6 +2704,8 @@ $('#formulario').submit(function() {
 			video_play=false;
 		}else{
 		 if (WURFL.form_factor != "Tablet") {
+			history.back();
+		 }else{
 			history.back();
 		 }
 		}
