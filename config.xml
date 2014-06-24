@@ -30,7 +30,8 @@
   <preference name="show-splash-screen-spinner" value="false" />
   <preference name="android-minSdkVersion" value="14" />       <!-- JB 4.0 -->
 
-  <preference name="SplashScreen" value="splash" />
+  
+  <preference name="AutoHideSplashScreen" value="false" />
   <preference name="SplashScreenDelay" value="10000" /> <!-- ios: if set to false, the spinner won't appear on the splash screen during app loading -->
   
   <preference name="stay-in-webview" value="true" /> 
@@ -58,6 +59,8 @@
   <gap:plugin name="io.github.pwlin.cordova.plugins.fileopener" version="1.0.1" />
   
   <gap:plugin name="org.apache.cordova.dialogs" version="0.2.6" />
+  
+  <gap:plugin name="org.apache.cordova.splashscreen" />
   
   
   
