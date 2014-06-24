@@ -43,7 +43,6 @@
 			});
 			
 			alert(WURFL.form_factor);
-			setTimeout(function () {navigator.splashscreen.hide()},1000);
 			if (WURFL.form_factor == "Tablet") {
 				alert('es una tablet');
 				window.plugins.orientationchanger.lockOrientation('landscape');
@@ -77,6 +76,10 @@
 				}
 			}, false);
         }
+		
+	function noscreen() {
+		navigator.splashscreen.hide();
+	}
 	</script>
 	
 	<style>
@@ -403,7 +406,7 @@
 	</style>
 	
 </head>
-<body overflow:hidden;>
+<body overflow:hidden; onload="noscreen()">
 
 
 <div id="xLOG"></div>
