@@ -84,7 +84,12 @@
   <gap:plugin name="org.apache.cordova.splashscreen" />
   
   <!-- only ios -->
-  <gap:plugin name="nl.x-services.plugins.ipadlandscapeenabler" version="3.0" />
+  <gap:config-file platform="ios" parent="UISupportedInterfaceOrientations~ipad" overwrite="false">
+    <array>
+      <string>UIInterfaceOrientationLandscapeLeft</string>
+      <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+  </gap:config-file>
   
 
 
