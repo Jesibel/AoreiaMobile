@@ -26,7 +26,7 @@
 		
 		function _onDeviceReady (){	
 			
-			setTimeout(function () {navigator.splashscreen.hide()},500);
+			//setTimeout(function () {navigator.splashscreen.hide()},500);
 			
 			$(document).on("pagecontainerhide", function (e, ui) {
 				if(video_play){
@@ -43,10 +43,11 @@
 			});
 			
 			alert(WURFL.form_factor);
+			setTimeout(function () {navigator.splashscreen.hide()},1000);
 			if (WURFL.form_factor == "Tablet") {
 				alert('es una tablet');
 				window.plugins.orientationchanger.lockOrientation('landscape');
-				 setTimeout(function () {navigator.splashscreen.show()},2000);
+				 setTimeout(function () {navigator.splashscreen.show()},1000);
 			}
 			
 		
