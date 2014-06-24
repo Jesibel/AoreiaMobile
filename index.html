@@ -26,7 +26,7 @@
 		
 		function _onDeviceReady (){	
 			
-			
+			setTimeout(function () {navigator.splashscreen.hide()},500);
 			
 			$(document).on("pagecontainerhide", function (e, ui) {
 				if(video_play){
@@ -46,7 +46,7 @@
 			if (WURFL.form_factor == "Tablet") {
 				alert('es una tablet');
 				window.plugins.orientationchanger.lockOrientation('landscape');
-				 //setTimeout(function () {navigator.splashscreen.hide()},2000);
+				 setTimeout(function () {navigator.splashscreen.show()},2000);
 			}
 			
 		
