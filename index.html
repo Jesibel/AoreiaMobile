@@ -28,8 +28,10 @@
 			
 			$(document).on("pagecontainerhide", function (e, ui) {
 				if(video_play){
+				    if (WURFL.form_factor != "Tablet") {
 					window.plugins.orientationchanger.lockOrientation('portrait');
 					video_play=false;
+					}
 				}
 			});
 			
