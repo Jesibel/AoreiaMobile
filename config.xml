@@ -27,7 +27,7 @@
   <!-- Preferences -->
 
   <preference name="orientation" value="portrait" />
-  <preference name="show-splash-screen-spinner" value="false" />
+  <preference name="show-splash-screen-spinner" value="true" />
   <preference name="android-minSdkVersion" value="14" />       <!-- JB 4.0 -->
 
   
