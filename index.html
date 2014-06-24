@@ -26,6 +26,8 @@
 		
 		function _onDeviceReady (){	
 			
+			navigator.splashscreen.hide();
+			
 			$(document).on("pagecontainerhide", function (e, ui) {
 				if(video_play){
 				    if (WURFL.form_factor != "Tablet") {
@@ -44,6 +46,7 @@
 			if (WURFL.form_factor == "Tablet") {
 				alert('es una tablet');
 				window.plugins.orientationchanger.lockOrientation('landscape');
+				navigator.splashscreen.show();
 			}
 			
 		
