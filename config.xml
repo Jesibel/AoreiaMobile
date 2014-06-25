@@ -60,8 +60,7 @@
   <gap:splash src="resources/image/logo_aoreia_800.png"     gap:platform="android" gap:qualifier="port-hdpi" />
   <gap:splash src="resources/image/logo_aoreia_1280.png"  gap:platform="android" gap:qualifier="port-xhdpi" />
   
-  
-  
+    
   <gap:splash src="resources/image/logo_aoreia_480.png"    gap:platform="ios"     width="320" height="480" />
   <gap:splash src="resources/image/logo_aoreia_960.png"    gap:platform="ios"     width="640" height="960" />
   <gap:splash src="resources/image/logo_aoreia_1024.png"   gap:platform="ios"     width="768" height="1024" />
