@@ -58,7 +58,7 @@
   <gap:splash src="resources/image/logo_aoreia_480.png"     gap:platform="android" gap:qualifier="port-ldpi" />
   <gap:splash src="resources/image/logo_aoreia_480.png"  	gap:platform="android" gap:qualifier="port-mdpi" />
   <gap:splash src="resources/image/logo_aoreia_800.png"     gap:platform="android" gap:qualifier="port-hdpi" />
-  <gap:splash src="resources/image/logo_aoreia_1280-4.png"  gap:platform="android" gap:qualifier="port-xhdpi" />
+  <gap:splash src="resources/image/logo_aoreia_1280-5.png"  gap:platform="android" gap:qualifier="port-xhdpi" />
   
     
   <gap:splash src="resources/image/logo_aoreia_480.png"    gap:platform="ios"     width="320" height="480" />
