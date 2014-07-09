@@ -72,7 +72,9 @@
 					console.log('abriendo pdf..');
 				}
 				var store = JSON.parse(event.data);
+				alert (store);
 				if (store && store.msg=='store' ) {
+					alert ('aquiii');
 					$.mobile.changePage("#storeHtml");
 					console.log('abriendo store..');
 				}
