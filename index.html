@@ -72,9 +72,7 @@
 					console.log('abriendo pdf..');
 				}
 				var store = JSON.parse(event.data);
-				alert (store);
 				if (store && store.msg=='store' ) {
-					alert ('aquiii');
 					$.mobile.changePage("#storeHtml");
 					console.log('abriendo store..');
 				}
@@ -436,21 +434,21 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;left:20%;" class="ui-btn ui-btn-icon-notext excecute ui-first-child" data-excecute="menuVertical" data-theme="b" href="#nav-panel1">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;left:20%;" class="ui-btn ui-btn-icon-notext excecute ui-first-child" data-excecute="menuVertical" data-theme="b" href="#nav-panel1">No text</a>
 			
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:20px;margin-top:5px"> AOREIA.COM  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:20px;"> AOREIA.COM  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;" class="ui-btn ui-icon-search ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="#">No text</a-->
-				<a id="hideText" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="showText" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 25px 25px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hideText" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="showText" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 25px 25px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
 				
-				<div id='searchInicio' style='position:absolute; left: -180px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchInicio' style='position:absolute; left: -180px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" class="searchInicio" id="searchInicio" name="searchInicio" autofocus></div>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/icon/quit-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" onclick="exitFromApp();return false;">No text</a-->				
 			    </div>
@@ -944,20 +942,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="weekly" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="weekly" data-theme="b" href="#nav-panel2">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="weekly" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="weekly" data-theme="b" href="#nav-panel2">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Weekly Insight  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Weekly Insight  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide1" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show1" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide1" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show1" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchWeekly' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchWeekly' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" class="searchWeekly" id="searchWeekly" name="searchWeekly" autofocus></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1021,20 +1019,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="testimonials" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="testimonials" data-theme="b" href="#nav-panel3">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="testimonials" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="testimonials" data-theme="b" href="#nav-panel3">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Testimonials  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Testimonials  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide2" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show2" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide2" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show2" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchTest' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchTest' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" id="searchTest" name="searchTest" autofocus></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1093,20 +1091,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="faq" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="faq" data-theme="b" href="#nav-panel4">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="faq" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="faq" data-theme="b" href="#nav-panel4">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> FAQ </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> FAQ </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide3" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show3" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide3" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show3" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchFaq' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchFaq' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" id="searchFaq" name="searchFaq" autofocus></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1164,20 +1162,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="#nav-panel5">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="#nav-panel5">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Articles </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Articles </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide4" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show4" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide4" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show4" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchArt' style='position:absolute; left: -190px; margin-top:8px; display:none;white-space: nowrap'>
+				<div id='searchArt' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" id="searchArt" name="searchArt" autofocus></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1235,20 +1233,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="#nav-panel6">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="articles" data-theme="b" href="#nav-panel6">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Audios Books </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Audios Books </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide5" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show5" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide5" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show5" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchAudios' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchAudios' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" id="searchAudios" name="searchAudios" autofocus></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1307,20 +1305,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="videos" data-theme="b" href="#videosHtml" data-rel="back" id="backVideo">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="videos" data-theme="b" href="#nav-panel7">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="videos" data-theme="b" href="#videosHtml" data-rel="back" id="backVideo">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="videos" data-theme="b" href="#nav-panel7">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Videos </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Videos </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide6" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show6" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide6" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show6" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchVideos' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchVideos' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" id="searchVideos" name="searchVideos" autofocus></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1380,20 +1378,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="files" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="files" data-theme="b" href="#nav-panel8">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="files" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="files" data-theme="b" href="#nav-panel8">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Files </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Files </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide7" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show7" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide7" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show7" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchFiles' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchFiles' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" id="searchFiles" name="searchFiles" autofocus></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1451,20 +1449,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="recent" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="recent" data-theme="b" href="#nav-panel9">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="recent" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="recent" data-theme="b" href="#nav-panel9">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Recent Deals </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Recent Deals </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide8" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show8" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide8" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show8" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchRec' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchRec' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" id="searchRec" name="searchRec" autofocus></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1522,20 +1520,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="meetings" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="meetings" data-theme="b" href="#nav-panel10">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="meetings" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="meetings" data-theme="b" href="#nav-panel10">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Meetings Archives </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Meetings Archives </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide9" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show9" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide9" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show9" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchMeet' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchMeet' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" id="searchMeet" name="searchMeet" autofocus></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1593,20 +1591,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="glossary" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="glossary" data-theme="b" href="#nav-panel13">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="glossary" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="glossary" data-theme="b" href="#nav-panel13">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Glossary  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Glossary  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide12" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show12" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide12" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show12" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchGlossary' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchGlossary' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="text" id="searchGlossary" name="searchGlossary"></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1664,20 +1662,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="legal" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="legal" data-theme="b" href="#nav-panel14">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="legal" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="legal" data-theme="b" href="#nav-panel14">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Legal  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Legal  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide13" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show13" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide13" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show13" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchLegal' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchLegal' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="text" id="searchLegal" name="searchLegal"></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1735,17 +1733,17 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="contacts" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="contacts" data-theme="b" href="#nav-panel11">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="contacts" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="contacts" data-theme="b" href="#nav-panel11">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Contact Us  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Contact Us  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="saveContactUs" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/save-36.png');background-repeat:no-repeat;background-size: 20px 20px;margin-left:-18px;margin-top:14px;background-position:center center;left:30%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="javascript:void(0);">No text</a>			
+				<a id="saveContactUs" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/save-36.png');background-repeat:no-repeat;background-size: 20px 20px;margin-left:-18px;margin-top:3px;background-position:center center;left:30%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="javascript:void(0);">No text</a>			
 				<!--a id="hide10" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
 				<a id="show10" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a-->								
 				
@@ -1811,20 +1809,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="about" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="about" data-theme="b" href="#nav-panel12">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="about" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="about" data-theme="b" href="#nav-panel12">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> About Us  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> About Us  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide11" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show11" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide11" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show11" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchAbout' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchAbout' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<!--input style="width:120px;" type="text" id="searchAbout" name="searchAbout"-->
 				
 				
@@ -1886,20 +1884,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="sponsors" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="sponsors" data-theme="b" href="#nav-panel15">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="sponsors" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="sponsors" data-theme="b" href="#nav-panel15">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Sponsors  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Sponsors  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide14" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show14" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide14" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show14" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchSponsors' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchSponsors' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input type="search" id="searchSponsors" name="searchSponsors"></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -1957,20 +1955,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-theme="b" href="#nav-panel16">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-theme="b" href="#nav-panel16">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Store  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Store  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide14" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show14" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide14" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show14" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchStore' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchStore' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input type="search" id="searchStore" name="searchStore"></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
@@ -2028,20 +2026,20 @@
 	
 		<div class="ui-mini ui-btn-left ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="legal" data-theme="b" href="/" data-rel="back">No text</a>
-				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="legal" data-theme="b" href="#nav-panel0">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/backk-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="legal" data-theme="b" href="/" data-rel="back">No text</a>
+				<a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/menu-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:5px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="legal" data-theme="b" href="#nav-panel0">No text</a>
 				<!--a style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('resources/img/Save2.png');background-repeat:no-repeat;margin-left:-11px;background-position:center center;left:10%;" class="ui-btn ui-icon-save ui-btn-icon-notext excecute ui-first-child ui-last-child" data-excecute="main-Menu" data-theme="b" href="#save">No text</a-->
 			</div>
 		</div>
 	
-		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;margin-top:5px;"> Search General  </h3>
+		<h3 class="ui-title" role="heading" aria-level="1" style="color:#0057A6;font-size:18px;"> Search General  </h3>
 	
 		<div class="ui-mini ui-btn-right ui-controlgroup ui-controlgroup-horizontal ui-corner-all" data-type="horizontal" data-role="controlgroup">
 			<div class="ui-controlgroup-controls ">				
-				<a id="hide0" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
-				<a id="show0" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:14px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
+				<a id="hide0" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/search-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn  ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>
+				<a id="show0" style="background:#E98C40; border:1px solid #E98C40; background-color:#E98C40;display:none;background-image: url('http://aoreiamobile.aoreia.com/resources/img/icon/delete-36.png');background-repeat:no-repeat; background-size: 30px 30px; margin-left:-11px;margin-top:3px;background-position:center center;" class="ui-btn ui-btn-icon-notext ui-first-child ui-last-child" data-theme="a" href="javascript:void(0);">No text</a>								
 				
-				<div id='searchGeneral' style='position:absolute; left: -190px; margin-top: 8px; display:none;white-space: nowrap'>
+				<div id='searchGeneral' style='position:absolute; left: -190px; top: -5px; display:none;white-space: nowrap'>
 				<input style="width:120px;" type="search" id="searchGeneral" name="searchGeneral"></div>
 				
 				<!--input type='button' id='hideText' value='Hide Text' style='position:absolute;left:0px'-->
