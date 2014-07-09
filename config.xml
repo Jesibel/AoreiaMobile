@@ -39,7 +39,7 @@
  
   <!-- Define app icon for each platform. -->
   <!--icon src="resources/image/icon.png" /-->
-  <icon src="resources/image/iconIOS2.png"/>
+  <icon src="resources/image/logo-Aoreia-120.png"/>
   
   <icon src="resources/image/logo36.png"   gap:platform="android"    gap:density="ldpi" />
   <icon src="resources/image/logo48.png"   gap:platform="android"    gap:density="mdpi" />
@@ -55,7 +55,9 @@
   <icon src="resources/image/logo-Aoreia-76.png"   gap:platform="ios"        width="76" height="76" />
   <icon src="resources/image/logo-Aoreia-80.png"   gap:platform="ios"        width="80" height="80" />
   <icon src="resources/image/logo-Aoreia-114.png"  gap:platform="ios"        width="114" height="114" />
+  <icon src="resources/image/logo-Aoreia-120.png"  gap:platform="ios"        width="120" height="120" />
   <icon src="resources/image/logo-Aoreia-144.png"  gap:platform="ios"        width="144" height="144" />
+  <icon src="resources/image/logo-Aoreia-152.png"  gap:platform="ios"        width="152" height="152" />
   
 
   <gap:splash src="resources/image/logo_aoreia_320V.png"     gap:platform="android" gap:qualifier="port-ldpi" />
