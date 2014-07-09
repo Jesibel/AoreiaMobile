@@ -45,6 +45,10 @@
   <preference name="FadeSplashScreenDuration"   value="0.5" />
   <preference name="ShowSplashScreenSpinner"    value="false" />
   
+  <feature name="SplashScreen">
+    <param name="ios-package" value="CDVSplashScreen" />
+  </feature>
+  
   <preference name="stay-in-webview" value="true" /> 
  
   <!-- Define app icon for each platform. -->
