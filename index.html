@@ -33,8 +33,6 @@
 			//setTimeout("clearInterval("+id+")",15000);
 			detectInternet();
 			
-			activePage = $.mobile.activePage.attr('id');
-			
 			
 			
 			$(document).on("pagecontainerhide", function (e, ui) {
@@ -121,7 +119,7 @@
 		
 		function detectInternet(){
 		
-			var url='http://reifaxhelper.booleam.com';
+			var url='http://aoreiamobile.aoreia.com';
 	
 			$.ajax({
 				url: url,
@@ -2179,7 +2177,7 @@
 	
 $(document).ready(function () {
 
-$.ajaxSetup({cache: false}); //evitar cache	
+	$.ajaxSetup({cache: false}); //evitar cache	
 
 	/*var video = $('#webVideosHtml').contents().find('#video')
 				
